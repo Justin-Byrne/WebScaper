@@ -1,0 +1,358 @@
+INDEED
+
+	Content-Type:
+	text/plain;charset=UTF-8
+
+	Referer:
+	https://www.indeed.com/
+
+	Sec-Ch-Ua:
+	"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"
+
+	Sec-Ch-Ua-Mobile:
+	?0
+
+	Sec-Ch-Ua-Platform:
+	"macOS"
+
+	User-Agent:
+	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
+
+MONSTER
+
+	Cache-Control:
+	private, no-cache, no-store, max-age=0, must-revalidate
+
+	Content-Encoding:
+	gzip
+
+	Content-Type:
+	text/html; charset=utf-8
+
+	Date:
+	Thu, 15 Jun 2023 17:16:52 GMT
+
+	Etag:
+	"9fc5rmjbv9d7x"
+
+	Referrer-Policy:
+	strict-origin
+
+	Server:
+	istio-envoy
+
+	Set-Cookie:
+	mn_ja3=6f493215f38eb029d6c2d514ffed4a43;Path=/;Max-Age=31536000
+
+	Strict-Transport-Security:
+	max-age=31536000; includeSubDomains; preload
+
+	Vary:
+	Accept-Encoding
+
+	Via:
+	1.1 e80693c02cfdfd081110512210d57840.cloudfront.net (CloudFront)
+
+	X-Amz-Cf-Id:
+	J0Y6IGLdJXv2mWyKhsmbNA9eTXyJDRK4el0xUW6AcfXY6G9aXUxemw==
+
+	X-Amz-Cf-Pop:
+	SEA73-P1
+
+	X-Cache:
+	Miss from cloudfront
+
+	X-Content-Type-Options:
+	nosniff
+
+	X-Envoy-Upstream-Service-Time:
+	1341
+
+	X-Frame-Options:
+	SAMEORIGIN
+
+	X-Ja3-Fingerprint:
+	6f493215f38eb029d6c2d514ffed4a43
+
+	X-Xss-Protection:
+	1; mode=block
+
+	:Authority:
+	www.monster.com
+
+	:Method:
+	GET
+
+	:Path:
+	/jobs/q-work-from-home-jobs?so=p.h.p
+
+	:Scheme:
+	https
+
+	Accept:
+	text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+
+	Accept-Encoding:
+	gzip, deflate, br
+
+	Accept-Language:
+	en-US,en;q=0.9,mt;q=0.8
+
+	Cookie:
+	fingerprint=zd64b25121ffc0decab3f745dba675aa2; install_banner=true; mn_ja3=6f493215f38eb029d6c2d514ffed4a43
+
+	Referer:
+	https://www.monster.com/
+
+	Sec-Ch-Ua:
+	"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"
+
+	Sec-Ch-Ua-Mobile:
+	?0
+
+	Sec-Ch-Ua-Platform:
+	"macOS"
+
+	Sec-Fetch-Dest:
+	document
+
+	Sec-Fetch-Mode:
+	navigate
+
+	Sec-Fetch-Site:
+	same-origin
+
+	Sec-Fetch-User:
+	?1
+
+	Sec-Gpc:
+	1
+
+	Upgrade-Insecure-Requests:
+	1
+
+	User-Agent:
+	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
+
+LINKEDIN
+
+	Cache-Control:
+	no-cache, no-store
+
+	Content-Encoding:
+	gzip
+
+	Content-Security-Policy:
+	base-uri 'self'; default-src 'none'; worker-src 'self' blob:; manifest-src 'self'; script-src 'report-sample' 'sha256-6gLjSWp3GRKZCUFvRX5aGHtECD1wVRgJOJp7r0ZQjV0=' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com www.linkedin.com/sc/ www.linkedin.com/scds/ www.linkedin.com/voyager/abp-detection.js piwik.corp.linkedin.com/piwik/piwik.js platform.linkedin.com/js/analytics.js platform-akam.linkedin.com/js/analytics.js platform-ecst.linkedin.com/js/analytics.js platform-azur.linkedin.com/js/analytics.js platform.linkedin.com/litms/utag/ platform-akam.linkedin.com/litms/utag/ platform-ecst.linkedin.com/litms/utag/ platform-azur.linkedin.com/litms/utag/ platform.linkedin.com/litms/vendor/ platform-akam.linkedin.com/litms/vendor/ platform-ecst.linkedin.com/litms/vendor/ platform-azur.linkedin.com/litms/vendor/ snap.licdn.com/li.lms-analytics/; style-src 'unsafe-inline' static.licdn.com static-exp1.licdn.com static-exp2.licdn.com static-exp3.licdn.com www.linkedin.com/sc/ www.linkedin.com/scds/; connect-src 'self' blob: wss: *.licdn.com *.linkedin.com *.lynda.com linkedin.sc.omtrdc.net/b/ss/ cdn.linkedin.oribi.io *.data.digitalassistant.oci.oraclecloud.com/chat/ *.tealiumiq.com *.microsoft.com *.office.com *.skype.com *.skype.net *.agora.io:* *.sd-rtn.com:* *.qualtrics.com *.trouter.io dpm.demdex.net/id lnkd.demdex.net; font-src data: *; form-action 'self' *.qualtrics.com; frame-ancestors 'self' *.www.linkedin.com:* *.prod.linkedin.com; frame-src 'self' blob: *.licdn.com *.linkedin.com *.microsoft.com *.lynda.com *.doubleclick.net *.megaphone.fm *.omny.fm *.qualtrics.com *.sounder.fm lichat.azurewebsites.net radar.cedexis.com lnkd.demdex.net cdn.embedly.com www.facebook.com embed.gettyimages.com linkedin.github.io www.linkedin-event.com livestream.com app.powerbi.com msit.powerbi.com w.soundcloud.com embed.ted.com player.vimeo.com www.youtube.com www.youtube-nocookie.com; img-src blob: data: *; media-src blob: data: *; report-uri https://www.linkedin.com/security/csp?a=voyager-web
+
+	Content-Type:
+	text/html
+
+	Date:
+	Thu, 15 Jun 2023 17:19:42 GMT
+
+	Expires:
+	Thu, 01 Jan 1970 00:00:00 GMT
+
+	Pragma:
+	no-cache
+
+	Set-Cookie:
+	li_gpc=1; Domain=.linkedin.com; Expires=Thu, 15 Jun 2023 18:19:42 GMT; Path=/; Secure; SameSite=None
+
+	Set-Cookie:
+	lidc="b=OB54:s=O:r=O:a=O:p=O:g=3253:u=212:x=1:i=1686849582:t=1686935982:v=2:sig=AQHG3mpEY9jsUjaX6NwNLDUYNYd-bNh9"; Expires=Fri, 16 Jun 2023 17:19:42 GMT; domain=.linkedin.com; Path=/; SameSite=None; Secure
+
+	Strict-Transport-Security:
+	max-age=31536000
+
+	Vary:
+	Accept-Encoding
+
+	X-Cache:
+	CONFIG_NOCACHE
+
+	X-Content-Type-Options:
+	nosniff
+
+	X-Frame-Options:
+	sameorigin
+
+	X-Li-Fabric:
+	prod-lor1
+
+	X-Li-Pop:
+	afd-prod-ltx1-x
+
+	X-Li-Proto:
+	http/2
+
+	X-Li-Source-Fabric:
+	prod-ltx1
+
+	X-Li-Uuid:
+	AAX+LkYmODgkj0RdD2brGg==
+
+	X-Msedge-Ref:
+	Ref A: FAD987250CFD476FA6F81125C8388FD9 Ref B: STBEDGE0507 Ref C: 2023-06-15T17:19:42Z
+
+	:Authority:
+	www.linkedin.com
+
+	:Method:
+	GET
+
+	:Path:
+	/jobs/collections/recommended/?currentJobId=2299377018
+
+	:Scheme:
+	https
+
+	Accept:
+	text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+
+	Accept-Encoding:
+	gzip, deflate, br
+
+	Accept-Language:
+	en-US,en;q=0.9,mt;q=0.8
+
+	Cookie:
+	lang=v=2&lang=en-us; bcookie="v=2&8d1ac098-32a0-4750-8e7c-c4b8f4b5bfa5"; bscookie="v=1&2023061419004295c3566d-20db-4400-8083-1d2e0108cb5fAQFduQOX9CK2UmV5BIZKBhOlWkLgG4-l"; li_gp=MTsxNjg2NzY5MjQyOzA=; g_state={"i_l":0}; liap=true; li_at=AQEDARz5XL4DMAcZAAABiLtIL90AAAGI31Sz3U0AgPpIIY5YJNakyBXMY8CS5ABHJDmexCNxFqgJpy16JSRZSD0PDVjf9Ar3lH6fnrc_eYaAlWoWzhi3wxR2I0FDBILRoYZC1YdtesP6tWaJAglUiaXJ; JSESSIONID="ajax:7528270348314178053"; timezone=America/Los_Angeles; li_theme=light; li_theme_set=app; UserMatchHistory=AQJ5hm5Ant1aKwAAAYi7SDpgvEvtCfVXS_10qJGRVCipaZtb7DKJCVxj8yTviUXtXV8yhrP4iBYaWpPEXrr2HEvXgW6tDBwNRV5rFWScP5DVIhlfrEURjbZL-z7EbX2ukwDOoSWMmTlgqksMmh3BbGoIh6760KSZTIQDvJtzdZ8sn4vqeSOjrCGWDjK8LV1gTz1VB9CzJIf16pH2SnOMuDs7hQ05PREdSh2ZVeV5AisNXOuCF9PE9LjegfJGIOTyu7PU3-EMTmnOW3BMGV-IyTgFS0jHr0MK3tOI4DBdEgu0BIVs5IP4UbMEOnSBy0e1sg; _guid=aee54d0c-abfa-4694-86ba-9e2c9115ea44; sdsc=22%3A1%2C1686769280120%7EJAPP%2C0dadMDSzewJycOIAbw36Uk2%2FWViI%3D
+
+	Sec-Ch-Ua:
+	"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"
+
+	Sec-Ch-Ua-Mobile:
+	?0
+
+	Sec-Ch-Ua-Platform:
+	"macOS"
+
+	Sec-Fetch-Dest:
+	document
+
+	Sec-Fetch-Mode:
+	navigate
+
+	Sec-Fetch-Site:
+	none
+
+	Sec-Fetch-User:
+	?1
+
+	Sec-Gpc:
+	1
+
+	Upgrade-Insecure-Requests:
+	1
+
+	User-Agent:
+	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
+
+WELLFOUND:
+
+	Accept-Ch:
+	Sec-CH-UA,Sec-CH-UA-Mobile,Sec-CH-UA-Platform,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-Device-Memory
+
+	Cache-Control:
+	private, no-cache, no-store, max-age=0, must-revalidate
+
+	Cf-Cache-Status:
+	DYNAMIC
+
+	Cf-Ray:
+	7d7c7d2c9f5d3081-SEA
+
+	Content-Encoding:
+	br
+
+	Content-Type:
+	text/html; charset=utf-8
+
+	Date:
+	Thu, 15 Jun 2023 17:21:22 GMT
+
+	Server:
+	cloudflare
+
+	Set-Cookie:
+	datadome=279Kqw3UKq0pyUnPANSVOIQ6VxTFbugA4AaqRH-bsNw7LaIA-purvq0uIbFtoDXo32gKHhmI-hs8~ExxOrlQKDodTVx8-_cIeNP3HWP9iWsCqVGaT-kUyxrNEFJGzSgW; Max-Age=31536000; Domain=.wellfound.com; Path=/; Secure; SameSite=Lax
+
+	Strict-Transport-Security:
+	max-age=15724800; includeSubDomains
+
+	Vary:
+	Accept-Encoding
+
+	X-Datadome:
+	protected
+
+	X-Powered-By:
+	Next.js
+
+	:Authority:
+	wellfound.com
+
+	:Method:
+	GET
+
+	:Path:
+	/jobs
+
+	:Scheme:
+	https
+
+	Accept:
+	text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+
+	Accept-Encoding:
+	gzip, deflate, br
+
+	Accept-Language:
+	en-US,en;q=0.9,mt;q=0.8
+
+	Cookie:
+	ajs_anonymous_id=f4bfdff4-fc87-4c94-8985-33cd369b93ba; _wellfound=86d8685574c9c9040c51e35d2745c4d8; __stripe_mid=9cff59d3-a5aa-4f6c-8e52-73e9b7e3070216e2be; datadome=6hoM2huf6QpaqabsFUtx~SMFotO9kFz4QmbScmVTXPBFM8mvp6kvdJXUKV9td1D9S2LE4agcNun5mz7l0-xyFNR1nWNiTJE33wS-r5uY0FTqamdR7V6tlrTsFtlQBwNG
+
+	Sec-Ch-Device-Memory:
+	8
+
+	Sec-Ch-Ua:
+	"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"
+
+	Sec-Ch-Ua-Arch:
+	"x86"
+
+	Sec-Ch-Ua-Full-Version-List:
+	"Not.A/Brand";v="8.0.0.0", "Chromium";v="114.0.5735.106", "Google Chrome";v="114.0.5735.106"
+
+	Sec-Ch-Ua-Mobile:
+	?0
+
+	Sec-Ch-Ua-Model:
+	""
+
+	Sec-Ch-Ua-Platform:
+	"macOS"
+
+	Sec-Fetch-Dest:
+	document
+
+	Sec-Fetch-Mode:
+	navigate
+
+	Sec-Fetch-Site:
+	none
+
+	Sec-Fetch-User:
+	?1
+
+	Sec-Gpc:
+	1
+
+	Upgrade-Insecure-Requests:
+	1
+
+	User-Agent:
+	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36

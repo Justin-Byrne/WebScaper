@@ -1,0 +1,160 @@
+import re
+
+def parse_commands ( commands ):
+
+	#### 	GLOBALS 	####################################
+
+	arguments = {
+		'domains':
+		{
+			'indeed':    False,
+			'monster':   False,
+			'linkedin':  False,
+			'wellfound': False
+		},
+		'inputs':
+		{
+			'job':      None,
+			'location': None
+		},
+		'help_menu': False
+	}
+
+	regexes = {
+		'domains':  r'\s*-d\s*|\s*--domains\s*',
+		'job':   	r'\s*-j\s*|\s*--job\s*',
+		'location': r'\s*-l\s*|\s*--location\s*'
+	}
+
+	#### 	FUNCTIONS 	####################################
+
+	def check_command_line ( ):
+
+		for i in range ( 1, len ( commands ) ):
+
+			command = commands [ i ]
+
+
+			for regex in regexes:
+
+				if ( re.search ( regexes [ regex ], command ) ):
+
+					match regex:
+
+						case 'domains':
+
+							values = commands [ i + 1 ].split ( '|' )
+
+
+							for value in values:
+
+								value = value.lower ( )
+
+
+								if value in arguments [ regex ].keys ( ):
+
+									arguments [ regex ] [ value ] = True
+
+							break;
+
+						case 'job' | 'location':
+
+							arguments [ 'inputs' ] [ regex ] = commands [ i + 1 ]
+
+							break;
+
+	def check_config_file  ( ):
+
+		config_regex = {
+			'domains': r'DOMAIN ADDRESSES',
+			'inputs':  r'INPUT VALUES',
+		}
+
+		for regex in config_regex:
+
+			match regex:
+
+				case 'domains':
+
+					if all ( value == False for value in arguments [ regex ].values ( ) ):
+
+						lines   = open ( './config/config.txt', 'r' ).readlines ( )
+
+						capture = False
+
+
+						for line in lines:
+
+							if capture and line [ 0 ] == '\n': break
+
+
+							if re.search ( config_regex [ regex ], line ):
+
+								capture = True
+
+								continue
+
+
+							if capture:
+
+								if line [ 0 ] == '#':
+
+									continue
+
+								else:
+
+									value = line.replace ( '\n', '' )
+
+									arguments [ regex ] [ value ] = True
+
+				case 'inputs':
+
+					regex_capture = re.compile ( r'([^=]+)\s*=\s*(\'|\"?)([^(\'|\"?)]+)(\'|\"?)' )
+
+
+					if any ( value == None for value in arguments [ regex ].values ( ) ):
+
+						lines   = open ( './config/config.txt', 'r' ).readlines ( )
+
+						capture = False
+
+
+						for line in lines:
+
+							if capture and line [ 0 ] == '\n': break
+
+
+							if re.search ( config_regex [ regex ], line ):
+
+								capture = True
+
+								continue
+
+
+							if capture:
+
+								if line [ 0 ] == '#':
+
+									continue
+
+								else:
+
+									value = line.replace ( '\n', '' )
+
+									match = regex_capture.findall ( value ) [ 0 ]
+
+
+									key, value = match [ 0 ], match [ 2 ]
+
+
+									arguments [ regex ] [ key ] = value
+
+
+	#### 	LOGIC 		####################################
+
+	check_command_line ( )
+
+	check_config_file  ( )
+
+
+	return arguments

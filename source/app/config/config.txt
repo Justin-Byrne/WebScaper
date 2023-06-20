@@ -1,0 +1,14 @@
+#### 	DOMAIN ADDRESSES 	################################
+# Details: ...
+############################################################
+indeed
+# monster
+# linkedin
+# wellfound
+
+#### 	INPUT VALUES    ####################################
+# Details: ...
+############################################################
+job='Software Engineer'
+location='Bremerton, WA'
+
