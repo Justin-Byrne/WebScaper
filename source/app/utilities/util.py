@@ -1,17 +1,19 @@
 # SYSTEM
-from .system.validation.is_directory 	import is_directory
+from .system.validation.is_directory 	import is_directory 	# VALIDATION
 from .system.validation.is_file      	import is_file
 from .system.validation.is_program 		import is_program
 
-from .system.get_commands 			 	import get_commands
+from .system.get_commands 			 	import get_commands 	# COMMAND
 
-from .system.debug.output 				import output
+from .system.debug.output 				import output 			# DEBUG
 from .system.debug.view_arguments 		import view_arguments
 
-from .system.file.get_eof 			 	import get_eof
+from .system.file.get_eof 			 	import get_eof 			# FILE
 from .system.file.get_files 			import get_files
 
-from .system.list.list_to_string 		import list_to_string
+from .system.list.list_to_string 		import list_to_string 	# LIST
+
+from .system.sanitize.clean_html 		import clean_html 		# SANITIZE
 
 # CUSTOM
 # from .custom ...    import ...
@@ -61,6 +63,10 @@ class Util:
 	def entry_padding    ( tuple_list, padding = 3, entry = 0 ) : return entry_padding 	  ( tuple_list, padding, entry )
 
 	def list_to_string   ( list ) 								: return list_to_string   ( list )
+
+	# SANITIZE
+
+	def clean_html 		 ( html )								: return clean_html 	  ( html )
 
 	#### 	CUSTOM 	########################################
 

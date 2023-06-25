@@ -17,20 +17,27 @@ def parse_commands ( commands ):
 			'job':      None,
 			'location': None
 		},
+		'browser':
+		{
+			'type': 	None,
+			'switches': None
+		},
 		'help_menu': False
 	}
 
 	regexes = {
 		'domains':  r'\s*-d\s*|\s*--domains\s*',
 		'job':   	r'\s*-j\s*|\s*--job\s*',
-		'location': r'\s*-l\s*|\s*--location\s*'
+		'location': r'\s*-l\s*|\s*--location\s*',
+		'type':     r'\s*-b\s*|\s*--browser\s*',
+		'switches': r'\s*-s\s*|\s*--switches\s*'
 	}
 
 	#### 	FUNCTIONS 	####################################
 
 	def check_command_line ( ):
 
-		for i in range ( 1, len ( commands ) ):
+		for i in range ( 1, ( len ( commands ) - 1 ) ):
 
 			command = commands [ i ]
 
@@ -55,13 +62,18 @@ def parse_commands ( commands ):
 
 									arguments [ regex ] [ value ] = True
 
-							break;
 
 						case 'job' | 'location':
 
 							arguments [ 'inputs' ] [ regex ] = commands [ i + 1 ]
 
-							break;
+						case 'type':
+
+							arguments [ 'browser' ] [ regex ] = commands [ i + 1 ].lower ( )
+
+						case 'switches':
+
+							arguments [ 'browser' ] [ regex ] = commands [ i + 1 ].split ( '|' )
 
 	def check_config_file  ( ):
 
@@ -148,7 +160,6 @@ def parse_commands ( commands ):
 
 
 									arguments [ regex ] [ key ] = value
-
 
 	#### 	LOGIC 		####################################
 
