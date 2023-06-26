@@ -1,7 +1,9 @@
 import sys
+import nltk
 
 from utilities.util     			import Util
 from core.scrape 					import Scrape
+
 
 ERROR = -1
 
@@ -15,6 +17,8 @@ def main ( commands ):
 	if arguments != ERROR:
 
 		Scrape ( arguments )
+
+		# NLP ( )
 
 
 main ( sys.argv )

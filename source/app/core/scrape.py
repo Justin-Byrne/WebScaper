@@ -1,5 +1,6 @@
 import time
 import re
+import os
 
 from utilities.util 		import Util
 from utilities.selenide 	import Selenide
@@ -96,19 +97,23 @@ class Scrape:
 
 					case 'indeed':
 
+						####################################
 						#### 	INPUT 	####################
+
 						selenide.send_keys_to_element_id ( 'text-input-what',  self.arguments [ 'inputs' ] [ 'job'      ] )
 
 						selenide.send_keys_to_element_id ( 'text-input-where', self.arguments [ 'inputs' ] [ 'location' ] )
 
 						selenide.get_element_css ( '.yosegi-InlineWhatWhere-primaryButton' ).click ( )
 
-
+						####################################
 						#### 	GET JOBS    ################
+
 						job_list = selenide.get_elements_css ( '.job_seen_beacon' )
 
-
+						####################################
 						#### 	SET JOBS    ################
+
 						job_pane_id = 'jobsearch-ViewjobPaneWrapper'
 
 
@@ -128,11 +133,23 @@ class Scrape:
 
 							self.job_offers [ site ].append ( f'<-- START --!\n{job_details}\n¡-- END -->' )
 
-
+						####################################
 						#### 	PROCESS JOBS    ############
 
-						file    = f'../../docs/dump/job_offers_{site}.txt'
+						file = f'cache/{site}/job_offers.txt'
 
+						##################
+						##  CHECK PATH  ##
+
+						path = os.path.dirname ( file )
+
+
+						if Util.is_directory ( path ) is False:
+
+							os.makedirs ( path )
+
+						#####################
+						##  FETCH CONTENT  ##
 
 						for index, job in enumerate ( self.job_offers [ site ] ):
 
@@ -160,6 +177,8 @@ class Scrape:
 
 							self.job_offers [ site ] [ index ] = '\n'.join ( '{}{}'.format ( f'{key}: ', val ) for key, val in offer.items ( ) )
 
+						#####################
+						##  WRITE CONTENT  ##
 
 						with open ( file, 'w+' ) as writer:
 
