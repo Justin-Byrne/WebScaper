@@ -19,7 +19,55 @@ class Scrape:
 			'wellfound': 'https://wellfound.com/jobs'
 		}
 
-		self.job_offers = [ ]
+		self.regexes = {
+			'indeed':
+			{
+				'title': 	r'jobsearch-JobInfoHeader-title\s[^<]+<span>([^<]+)<',
+				'party': 	r'<div data-company-name=\"true\"[^<]+<span[^<]+<a[^>]+>([^<]+)<',
+				'locale': 	r'<\/div><\/div><div\sclass=\"css[^>]+><div>([^<]+)<',
+				'pay': 		r'salaryInfoAndJobType[^<]+<[^>]+>([^<]+)<',
+				'type':		r'Job\sType<[^<]+<[^<]+<[^<]+<[^<]+<[^<]+<[^>]+>([^<]+)<',
+				'setting':  r'<div\sclass=\"css[^>]+><div>[^>]+>•<[^>]+>([^<]+)<',
+				'details':  r'id=\"jobDescriptionText\"[^<]+([^¡]+)¡'
+			},
+			'monster':
+			{
+				'title': 	r'',
+				'party': 	r'',
+				'locale': 	r'',
+				'pay': 		r'',
+				'type':		r'',
+				'setting':  r'',
+				'details':  r''
+			},
+			'linkedin':
+			{
+				'title': 	r'',
+				'party': 	r'',
+				'locale': 	r'',
+				'pay': 		r'',
+				'type':		r'',
+				'setting':  r'',
+				'details':  r''
+			},
+			'wellfound':
+			{
+				'title': 	r'',
+				'party': 	r'',
+				'locale': 	r'',
+				'pay': 		r'',
+				'type':		r'',
+				'setting':  r'',
+				'details':  r''
+			}
+		}
+
+		self.job_offers = {
+			'indeed':    [ ],
+			'monster':   [ ],
+			'linkedin':  [ ],
+			'wellfound': [ ]
+		}
 
 		#### 	INITIALIZE 	################################
 
@@ -27,40 +75,11 @@ class Scrape:
 
 		self.init ( )
 
-		self.process_job_offers ( )
-
 		# self.driver.quit ( )
 
 	#### 	INITIATORS 	########################################
 
 	def init ( self ):
-
-		####################################################
-		#### 	FUNCTIONS    ###############################
-
-		def set_job_offers ( list ):
-
-			job_pane_id = 'jobsearch-ViewjobPaneWrapper'
-
-
-			for job in list:
-
-				job.click ( )
-
-
-				selenide.scroll_to (
-						     job_pane_id,  												# Identifier
-						     selenide.get_element_id_explicit_wait ( job_pane_id, 3 ) 	# Conditional
-						 )
-
-
-				job_details = selenide.get_element_id ( job_pane_id ).get_attribute ( 'innerHTML' )
-
-
-				self.job_offers.append ( f'<-- START --!\n{job_details}\n¡-- END -->' )
-
-		####################################################
-		#### 	LOGIC    ###################################
 
 		for site in self.arguments [ 'domains' ]:
 
@@ -73,63 +92,96 @@ class Scrape:
 						   )
 
 
-				selenide.send_keys_to_element_id ( 'text-input-what',  self.arguments [ 'inputs' ] [ 'job'      ] )
+				match site:
 
-				selenide.send_keys_to_element_id ( 'text-input-where', self.arguments [ 'inputs' ] [ 'location' ] )
+					case 'indeed':
 
+						#### 	INPUT 	####################
+						selenide.send_keys_to_element_id ( 'text-input-what',  self.arguments [ 'inputs' ] [ 'job'      ] )
 
-				selenide.get_element_css ( '.yosegi-InlineWhatWhere-primaryButton' ).click ( )
+						selenide.send_keys_to_element_id ( 'text-input-where', self.arguments [ 'inputs' ] [ 'location' ] )
 
-
-				job_list = selenide.get_elements_css ( '.job_seen_beacon' )
-
-
-				set_job_offers ( job_list )
-
-				# driver.quit ( )
-
-	def process_job_offers ( self ):
-
-		file    = '../../docs/dump/job_offers.txt'
-
-		regexes = {
-			'title': 	r'jobsearch-JobInfoHeader-title\s[^<]+<span>([^<]+)<',
-			'party': 	r'<div data-company-name=\"true\"[^<]+<span[^<]+<a[^>]+>([^<]+)<',
-			'locale': 	r'<\/div><\/div><div\sclass=\"css[^>]+><div>([^<]+)<',
-			'pay': 		r'salaryInfoAndJobType[^<]+<[^>]+>([^<]+)<',
-			'type':		r'Job\sType<[^<]+<[^<]+<[^<]+<[^<]+<[^<]+<[^>]+>([^<]+)<',
-			'setting':  r'<div\sclass=\"css[^>]+><div>[^>]+>•<[^>]+>([^<]+)<',
-			'details':  r'id=\"jobDescriptionText\"[^<]+([^¡]+)¡'
-		}
+						selenide.get_element_css ( '.yosegi-InlineWhatWhere-primaryButton' ).click ( )
 
 
-		for index, job in enumerate ( self.job_offers ):
-
-			offer = { }
-
-
-			for regex in regexes:
-
-				value = None
+						#### 	GET JOBS    ################
+						job_list = selenide.get_elements_css ( '.job_seen_beacon' )
 
 
-				if re.search ( regexes [ regex ], job ):
-
-					if regex == 'details':
-
-						value = Util.clean_html ( re.search ( regexes [ regex ], job ).group ( 1 ) )
-
-					else:
-
-						value = re.search ( regexes [ regex ], job ).group ( 1 )
+						#### 	SET JOBS    ################
+						job_pane_id = 'jobsearch-ViewjobPaneWrapper'
 
 
-				offer.update ( { regex: value } )
+						for job in job_list:
+
+							job.click ( )
 
 
-			self.job_offers [ index ] = '\n'.join ( '{}{}'.format ( f'{key}: ', val ) for key, val in offer.items ( ) )
+							selenide.scroll_to (
+									     job_pane_id,  												# Identifier
+									     selenide.get_element_id_explicit_wait ( job_pane_id, 3 ) 	# Conditional
+									 )
 
 
-		with open ( file, 'w+' ) as writer:
+							job_details = selenide.get_element_id ( job_pane_id ).get_attribute ( 'innerHTML' )
 
-			writer.write ( '\n¡-- NEXT JOB --!\n\n'.join ( self.job_offers ) )
+
+							self.job_offers [ site ].append ( f'<-- START --!\n{job_details}\n¡-- END -->' )
+
+
+						#### 	PROCESS JOBS    ############
+
+						file    = f'../../docs/dump/job_offers_{site}.txt'
+
+
+						for index, job in enumerate ( self.job_offers [ site ] ):
+
+							offer = { }
+
+
+							for regex in self.regexes [ site ]:
+
+								value = None
+
+
+								if re.search ( self.regexes [ site ] [ regex ], job ):
+
+									if regex == 'details':
+
+										value = Util.clean_html ( re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
+
+									else:
+
+										value = re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 )
+
+
+								offer.update ( { regex: f'{value}\n' } )
+
+
+							self.job_offers [ site ] [ index ] = '\n'.join ( '{}{}'.format ( f'{key}: ', val ) for key, val in offer.items ( ) )
+
+
+						with open ( file, 'w+' ) as writer:
+
+							writer.write ( '\n¡-- NEXT JOB --!\n\n'.join ( self.job_offers [ site ] ) )
+
+
+						# driver.quit ( )
+
+					case 'monster':
+
+						# code ...
+
+						pass
+
+					case 'linkedin':
+
+						# code ...
+
+						pass
+
+					case 'wellfound':
+
+						# code ...
+
+						pass
