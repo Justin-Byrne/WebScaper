@@ -1,13 +1,14 @@
-import time
-import re
 import os
+import re
+import json
+import time
 
 from utilities.util 		import Util
 from utilities.selenide 	import Selenide
 
 class Scrape:
 
-	def __init__( self, arguments ):
+	def __init__ ( self, arguments ):
 
 		#### 	GLOBALS 	################################
 
@@ -136,7 +137,7 @@ class Scrape:
 						####################################
 						#### 	PROCESS JOBS    ############
 
-						file = f'cache/{site}/job_offers.txt'
+						file = f'cache/{site}/job_offers.info'
 
 						##################
 						##  CHECK PATH  ##
@@ -148,8 +149,8 @@ class Scrape:
 
 							os.makedirs ( path )
 
-						#####################
-						##  FETCH CONTENT  ##
+						#######################
+						##  ITEMIZE CONTENT  ##
 
 						for index, job in enumerate ( self.job_offers [ site ] ):
 
@@ -172,17 +173,17 @@ class Scrape:
 										value = re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 )
 
 
-								offer.update ( { regex: f'{value}\n' } )
+								offer.update ( { regex: value } )
 
 
-							self.job_offers [ site ] [ index ] = '\n'.join ( '{}{}'.format ( f'{key}: ', val ) for key, val in offer.items ( ) )
+							self.job_offers [ site ] [ index ] = json.dumps ( offer )
 
 						#####################
 						##  WRITE CONTENT  ##
 
 						with open ( file, 'w+' ) as writer:
 
-							writer.write ( '\n¡-- NEXT JOB --!\n\n'.join ( self.job_offers [ site ] ) )
+							writer.write ( ','.join ( self.job_offers [ site ] ) )
 
 
 						# driver.quit ( )

@@ -18,7 +18,6 @@ class Selenide:
 
 		self.set_url    ( url, 0.5 )
 
-
 	############################################################
 	#### 	SETTERS    #########################################
 
@@ -105,12 +104,28 @@ class Selenide:
 	############################################################
 	#### 	GETTERS    #########################################
 
-	def get_element_id ( self, identifier ):
+	def get_element_id   ( self, identifier  ):
 
 		return self.driver.find_element ( By.ID, identifier )
 
 
-	def get_element_id_explicit_wait ( self, identifier, timeout ):
+	def get_element_css  ( self, cssSelector ):
+
+		return self.driver.find_element ( By.CSS_SELECTOR, cssSelector )
+
+
+	def get_elements_css ( self, cssSelector ):
+
+		return self.driver.find_elements ( By.CSS_SELECTOR, cssSelector )
+
+
+	def get_element_tag  ( self, tagName     ):
+
+		return self.driver.find_elements ( By.TAG_NAME, tagName )
+
+
+
+	def get_element_id_explicit_wait  ( self, identifier, timeout  ):
 
 		result = None
 
@@ -125,11 +140,6 @@ class Selenide:
 
 
 		return result
-
-
-	def get_element_css ( self, cssSelector ):
-
-		return self.driver.find_element ( By.CSS_SELECTOR, cssSelector )
 
 
 	def get_element_css_explicit_wait ( self, cssSelector, timeout ):
@@ -148,15 +158,6 @@ class Selenide:
 
 		return result
 
-
-	def get_elements_css ( self, cssSelector ):
-
-		return self.driver.find_elements ( By.CSS_SELECTOR, cssSelector )
-
-
-	def get_element_tag ( self, tag ):
-
-		return self.driver.find_elements ( By.TAG_NAME, tag )
 
 
 	def get_driver_options ( self, options, switches ):
