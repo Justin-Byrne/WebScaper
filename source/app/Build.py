@@ -1,9 +1,9 @@
 import sys
 import nltk
 
-from utilities.util     			import Util
-from core.scrape 					import Scrape
-from core.nltk 						import Nlprocess
+from utilities.util 	import Util
+from core.scrape 		import Scrape
+from core.nlp 			import Nlp
 
 
 ERROR = -1
@@ -19,7 +19,9 @@ def main ( commands ):
 
 		Scrape ( arguments )
 
-		Nlprocess ( )
+		Nlp ( )
+
+
 
 
 main ( sys.argv )

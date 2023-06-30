@@ -164,19 +164,26 @@ class Scrape:
 
 								if re.search ( self.regexes [ site ] [ regex ], job ):
 
-									if regex == 'details':
 
-										value = Util.clean_html ( re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
+									match regex:
 
-									else:
+										case 'title':
 
-										value = re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 )
+											value = Util.get_similarity ( self.arguments [ 'inputs' ] [ 'job' ], re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
+
+										case 'details':
+
+											value = Util.clean_html ( re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
+
+										case _:
+
+											value = re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 )
 
 
 								offer.update ( { regex: value } )
 
 
-							self.job_offers [ site ] [ index ] = json.dumps ( offer )
+							self.job_offers [ site ] [ index ] = json.dumps ( offer, indent = 4 )
 
 						#####################
 						##  WRITE CONTENT  ##

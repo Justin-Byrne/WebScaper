@@ -16,7 +16,7 @@ from .system.list.list_to_string 		import list_to_string 	# LIST
 from .system.sanitize.clean_html 		import clean_html 		# SANITIZE
 
 # CUSTOM
-# from .custom ...    import ...
+from .custom.string.get_similarity 		import get_similarity 	# STRING
 
 class Util:
 
@@ -70,4 +70,6 @@ class Util:
 
 	#### 	CUSTOM 	########################################
 
-	# code ...
+	# STRING
+
+	def get_similarity	 ( root, comparison ) 					: return get_similarity   ( root, comparison )

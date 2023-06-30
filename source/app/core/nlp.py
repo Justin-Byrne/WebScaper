@@ -1,15 +1,17 @@
 import os
 import json
+import re
+import spacy
 
 from utilities.util 	import Util
 
-from nltk.tokenize 		import sent_tokenize, word_tokenize
-
-class Nlprocess:
+class Nlp:
 
 	def __init__ ( self ):
 
 		#### 	GLOBALS 	################################
+
+		self.nl_parser = spacy.load ( 'en_core_web_sm' )
 
 		self.job_offers = {
 			'indeed':    None,
@@ -28,8 +30,6 @@ class Nlprocess:
 
 		self.fetch_cached_jobs ( )
 
-		self.process_details   ( )
-
 
 	def fetch_cached_jobs ( self ):
 
@@ -45,7 +45,3 @@ class Nlprocess:
 					with open ( f'{root}/{entry}', 'r' ) as reader:
 
 						self.job_offers [ basename ] = json.loads ( f'[{reader.read ( ).strip ( )}]' )
-
-	def process_details   ( self ):
-
-
