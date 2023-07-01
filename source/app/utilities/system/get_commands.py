@@ -1,5 +1,6 @@
-from .parse_commands 		import parse_commands
-from .debug.output	import output
+from .parse_commands	import parse_commands
+from .debug.output		import output
+
 
 supported_browsers = [
 	'chrome',
@@ -10,6 +11,7 @@ supported_browsers = [
 ]
 
 ERROR = -1
+
 
 def get_commands   ( commands ):
 
@@ -25,14 +27,14 @@ def get_commands   ( commands ):
 
 	if any ( value == None for value in arguments [ 'inputs' ].values ( ) ):
 
-		output ( 'get_commands', [ 'Both, a searchable "job" and "location" needs to be present !', 'Please verify your command string or config.txt settings !' ] );
+		output ( 'get_commands', [ 'Both, a searchable "role" and "location" needs to be present !', 'Please verify your command string or config.txt settings !' ] );
 
 		return ERROR
 
 
 	if arguments [ 'browser' ] [ 'type' ] not in supported_browsers:
 
-		Util.output ( 'get_commands.py', f"Browser \"{arguments [ 'browser' ] [ 'type' ]}\" is not a supported browser type !" )
+		output ( 'get_commands.py', f"Browser \"{arguments [ 'browser' ] [ 'type' ]}\" is not a supported browser type !" )
 
 		return ERROR
 

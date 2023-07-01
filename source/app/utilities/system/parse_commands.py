@@ -14,7 +14,7 @@ def parse_commands ( commands ):
 		},
 		'inputs':
 		{
-			'job':      None,
+			'role':      None,
 			'location': None
 		},
 		'browser':
@@ -27,7 +27,7 @@ def parse_commands ( commands ):
 
 	regexes = {
 		'domains':  r'\s*-d\s*|\s*--domains\s*',
-		'job':   	r'\s*-j\s*|\s*--job\s*',
+		'role':   	r'\s*-r\s*|\s*--r\s*',
 		'location': r'\s*-l\s*|\s*--location\s*',
 		'type':     r'\s*-b\s*|\s*--browser\s*',
 		'switches': r'\s*-s\s*|\s*--switches\s*'
@@ -63,7 +63,7 @@ def parse_commands ( commands ):
 									arguments [ regex ] [ value ] = True
 
 
-						case 'job' | 'location':
+						case 'role' | 'location':
 
 							arguments [ 'inputs' ] [ regex ] = commands [ i + 1 ]
 

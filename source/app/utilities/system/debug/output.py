@@ -16,7 +16,7 @@ def output ( source, message, type = 'error' ):
 
 		case str ( ):
 
-			result = f'{start}{message.title ( )}'
+			result = f'{start}{message}'
 
 		case list ( ):
 
@@ -24,14 +24,14 @@ def output ( source, message, type = 'error' ):
 
 				for note in message:
 
-					result += f'{start}{note.title ( )}\n'
+					result += f'{start}{note}\n'
 
 
 				result = result.rstrip ( '\n' )
 
 			else:
 
-				result = f'{start}{message [ 0 ].title ( )}'
+				result = f'{start}{message [ 0 ]}'
 
 
 	print ( f'{ahead}{source}{result}')

@@ -24,7 +24,7 @@ class Scrape:
 		self.regexes = {
 			'indeed':
 			{
-				'title': 	r'jobsearch-JobInfoHeader-title\s[^<]+<span>([^<]+)<',
+				'role': 	r'jobsearch-JobInfoHeader-title\s[^<]+<span>([^<]+)<',
 				'party': 	r'<div data-company-name=\"true\"[^<]+<span[^<]+<a[^>]+>([^<]+)<',
 				'locale': 	r'<\/div><\/div><div\sclass=\"css[^>]+><div>([^<]+)<',
 				'pay': 		r'salaryInfoAndJobType[^<]+<[^>]+>([^<]+)<',
@@ -34,7 +34,7 @@ class Scrape:
 			},
 			'monster':
 			{
-				'title': 	r'',
+				'role': 	r'',
 				'party': 	r'',
 				'locale': 	r'',
 				'pay': 		r'',
@@ -44,7 +44,7 @@ class Scrape:
 			},
 			'linkedin':
 			{
-				'title': 	r'',
+				'role': 	r'',
 				'party': 	r'',
 				'locale': 	r'',
 				'pay': 		r'',
@@ -54,7 +54,7 @@ class Scrape:
 			},
 			'wellfound':
 			{
-				'title': 	r'',
+				'role': 	r'',
 				'party': 	r'',
 				'locale': 	r'',
 				'pay': 		r'',
@@ -101,7 +101,7 @@ class Scrape:
 						####################################
 						#### 	INPUT 	####################
 
-						selenide.send_keys_to_element_id ( 'text-input-what',  self.arguments [ 'inputs' ] [ 'job'      ] )
+						selenide.send_keys_to_element_id ( 'text-input-what',  self.arguments [ 'inputs' ] [ 'role'     ] )
 
 						selenide.send_keys_to_element_id ( 'text-input-where', self.arguments [ 'inputs' ] [ 'location' ] )
 
@@ -167,13 +167,17 @@ class Scrape:
 
 									match regex:
 
-										case 'title':
+										case 'role':
 
-											value = Util.get_similarity ( self.arguments [ 'inputs' ] [ 'job' ], re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
+											value = Util.get_hi_similarity ( self.arguments [ 'inputs' ] [ 'role' ], re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
+
+											value = Util.to_titlecase      ( value )
 
 										case 'details':
 
-											value = Util.clean_html ( re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
+											value = Util.clean_html      ( re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
+
+											value = Util.clean_character ( value, '\n', 2 )
 
 										case _:
 

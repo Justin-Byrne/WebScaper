@@ -14,9 +14,12 @@ from .system.file.get_files 			import get_files
 from .system.list.list_to_string 		import list_to_string 	# LIST
 
 from .system.sanitize.clean_html 		import clean_html 		# SANITIZE
+from .system.sanitize.clean_character 	import clean_character
 
 # CUSTOM
-from .custom.string.get_similarity 		import get_similarity 	# STRING
+
+from .custom.string.get_hi_similarity 	import get_hi_similarity# STRING
+from .custom.string.to_titlecase		import to_titlecase
 
 class Util:
 
@@ -26,50 +29,54 @@ class Util:
 
 	# VALIDATION
 
-	def is_directory 	 ( path ) 				  				: return is_directory     ( path )
+	def is_directory 	  ( path ) 				  				: return is_directory      ( path )
 
-	def is_file 	 	 ( path,   type = None )  				: return is_file          ( path, type )
+	def is_file 	 	  ( path,   type = None )  				: return is_file           ( path, type )
 
-	def is_flag      	 ( string, flag = '-'  )  				: return is_flag 	      ( string, flag )
+	def is_flag      	  ( string, flag = '-'  )  				: return is_flag 	       ( string, flag )
 
-	def is_program 		 ( program )							: return is_program 	  ( program )
+	def is_program 		  ( program )							: return is_program 	   ( program )
 
 	# COMMAND
 
-	def get_command_type ( command  ) 		 	  				: return get_command_type ( command  )
+	def get_command_type  ( command  ) 		 	  				: return get_command_type  ( command  )
 
-	def get_commands     ( commands ) 		 	  				: return get_commands     ( commands )
+	def get_commands      ( commands ) 		 	  				: return get_commands      ( commands )
 
 	# DEBUG
 
-	def output 			 ( source, message, type = 'error' ) 	: return output 		  ( source, message, type )
+	def output 			  ( source, message, type = 'error' ) 	: return output 		   ( source, message, type )
 
-	def view_arguments   ( arguments ) 							: return view_arguments   ( arguments )
+	def view_arguments    ( arguments ) 						: return view_arguments    ( arguments )
 
 	# FILE
 
-	def get_eof 		 ( file ) 				  				: return get_eof          ( file )
+	def get_eof 		  ( file ) 				  				: return get_eof           ( file )
 
-	def get_files 		 ( path, type, omissions = '' ) 		: return get_files        ( path, type, omissions )
+	def get_files 		  ( path, type, omissions = '' ) 		: return get_files         ( path, type, omissions )
 
 	# STRING
 
-	def repeat_character ( character, times = 0 ) 				: return repeat_character ( character, times )
+	def repeat_character  ( character, times = 0 ) 				: return repeat_character  ( character, times )
 
 	# LIST
 
-	def create_2d_list   ( depth ) 				  				: return create_2d_list   ( depth )
+	def create_2d_list    ( depth ) 							: return create_2d_list    ( depth )
 
-	def entry_padding    ( tuple_list, padding = 3, entry = 0 ) : return entry_padding 	  ( tuple_list, padding, entry )
+	def entry_padding     ( tuple_list, padding = 3, entry = 0 ): return entry_padding 	   ( tuple_list, padding, entry )
 
-	def list_to_string   ( list ) 								: return list_to_string   ( list )
+	def list_to_string    ( list ) 								: return list_to_string    ( list )
 
 	# SANITIZE
 
-	def clean_html 		 ( html )								: return clean_html 	  ( html )
+	def clean_html 		  ( html )								: return clean_html 	   ( html )
+
+	def clean_character   ( string, character, multiply = 1 ) 	: return clean_character   ( string, character, multiply )
 
 	#### 	CUSTOM 	########################################
 
 	# STRING
 
-	def get_similarity	 ( root, comparison ) 					: return get_similarity   ( root, comparison )
+	def get_hi_similarity ( root, comparison )					: return get_hi_similarity ( root, comparison )
+
+	def to_titlecase      ( string ) 							: return to_titlecase      ( string )
