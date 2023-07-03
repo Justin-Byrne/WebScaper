@@ -25,7 +25,7 @@ class Scrape:
 			'indeed':
 			{
 				'role': 	r'jobsearch-JobInfoHeader-title\s[^<]+<span>([^<]+)<',
-				'party': 	r'<div data-company-name=\"true\"[^<]+<span[^<]+<a[^>]+>([^<]+)<',
+				'firm': 	r'<div data-company-name=\"true\"[^<]+<span[^<]+<a[^>]+>([^<]+)<',
 				'locale': 	r'<\/div><\/div><div\sclass=\"css[^>]+><div>([^<]+)<',
 				'pay': 		r'salaryInfoAndJobType[^<]+<[^>]+>([^<]+)<',
 				'type':		r'Job\sType<[^<]+<[^<]+<[^<]+<[^<]+<[^<]+<[^>]+>([^<]+)<',
@@ -35,7 +35,7 @@ class Scrape:
 			'monster':
 			{
 				'role': 	r'',
-				'party': 	r'',
+				'firm': 	r'',
 				'locale': 	r'',
 				'pay': 		r'',
 				'type':		r'',
@@ -45,7 +45,7 @@ class Scrape:
 			'linkedin':
 			{
 				'role': 	r'',
-				'party': 	r'',
+				'firm': 	r'',
 				'locale': 	r'',
 				'pay': 		r'',
 				'type':		r'',
@@ -55,7 +55,7 @@ class Scrape:
 			'wellfound':
 			{
 				'role': 	r'',
-				'party': 	r'',
+				'firm': 	r'',
 				'locale': 	r'',
 				'pay': 		r'',
 				'type':		r'',
@@ -73,7 +73,7 @@ class Scrape:
 
 		#### 	INITIALIZE 	################################
 
-		Util.view_arguments ( arguments )
+		# Util.view_arguments ( arguments )
 
 		self.init ( )
 
@@ -178,6 +178,8 @@ class Scrape:
 											value = Util.clean_html      ( re.search ( self.regexes [ site ] [ regex ], job ).group ( 1 ) )
 
 											value = Util.clean_character ( value, '\n', 2 )
+
+											# value = Util.clean_structure ( value )
 
 										case _:
 

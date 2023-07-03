@@ -1,19 +1,31 @@
-def is_only_character ( string ):
+import re
+
+def is_non_word ( string, index ):
 
 	length = len ( string )
 
 
-	if length == 1:
+	if re.search ( r'\((\w+)\)', string ): 						# (abc)
 
 		return True
 
-	else:
+
+	if length <= 4 and index > 1: 								# abcd
+
+		return True
+
+	else: 														# iii
 
 		for i in range ( 1, length ):
 
-			if string [ i ] != string [ 0 ]: 						return False
+			if string [ 0 ] != string [ i ]:
 
-			if i == length - 1 and string [ i ] == string [ 0 ]: 	return True
+				return False
+
+
+			if i == length - 1 and string [ 0 ] == string [ i ]:
+
+				return True
 
 
 def to_titlecase ( string ):
@@ -23,9 +35,7 @@ def to_titlecase ( string ):
 
 	for index, value in enumerate ( values ):
 
-		if value.isalpha ( ) and value.islower ( ) or value.isupper ( ):
-
-			values [ index ] = value.upper ( ) if is_only_character ( value ) else value.title ( )
+		values [ index ] = value.upper ( ) if is_non_word ( value, index ) else value.title ( )
 
 
 	return ' '.join ( values )

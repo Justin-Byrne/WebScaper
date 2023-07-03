@@ -17,7 +17,7 @@ def main ( commands ):
 
 	if arguments != ERROR:
 
-		Scrape ( arguments )
+		# Scrape ( arguments )
 
 		Nlp ( )
 
