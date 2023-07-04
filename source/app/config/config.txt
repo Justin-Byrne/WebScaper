@@ -9,13 +9,13 @@ indeed
 #### 	INPUT VALUES    ####################################
 # Details: ...
 ############################################################
-job='Software Engineer'
+role='Software Engineer'
 location='Bremerton, WA'
 
 #### 	BROWSER TYPE    ####################################
 # Details: ...
 ############################################################
-browser='chrome'
+type='chrome'
 
 #### 	BROWSER SWITCHES    ################################
 # Details: ...

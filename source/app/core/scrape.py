@@ -73,7 +73,7 @@ class Scrape:
 
 		#### 	INITIALIZE 	################################
 
-		# Util.view_arguments ( arguments )
+		Util.view_arguments ( arguments )
 
 		self.init ( )
 

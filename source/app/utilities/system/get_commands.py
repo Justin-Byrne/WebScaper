@@ -12,10 +12,9 @@ supported_browsers = [
 
 ERROR = -1
 
-
 def get_commands   ( commands ):
 
-	arguments  = parse_commands ( commands )
+	arguments = parse_commands ( commands )
 
 
 	if all ( value == False for value in arguments [ 'domains' ].values ( ) ):

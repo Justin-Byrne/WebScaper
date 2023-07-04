@@ -14,7 +14,7 @@ def parse_commands ( commands ):
 		},
 		'inputs':
 		{
-			'role':      None,
+			'role':     None,
 			'location': None
 		},
 		'browser':
@@ -78,8 +78,10 @@ def parse_commands ( commands ):
 	def check_config_file  ( ):
 
 		config_regex = {
-			'domains': r'DOMAIN ADDRESSES',
-			'inputs':  r'INPUT VALUES',
+			'domains':  r'DOMAIN ADDRESSES',
+			'inputs':   r'INPUT VALUES',
+			'browser':  r'BROWSER TYPE',
+			'switches': r'BROWSER SWITCHES'
 		}
 
 		for regex in config_regex:
@@ -119,7 +121,7 @@ def parse_commands ( commands ):
 
 									arguments [ regex ] [ value ] = True
 
-				case 'inputs':
+				case 'inputs' | 'browser':
 
 					regex_capture = re.compile ( r'([^=]+)\s*=\s*(\'|\"?)([^(\'|\"?)]+)(\'|\"?)' )
 
@@ -160,6 +162,45 @@ def parse_commands ( commands ):
 
 
 									arguments [ regex ] [ key ] = value
+
+				case 'switches':
+
+					if arguments [ 'browser' ] [ regex ] is None:
+
+						lines   = open ( './config/config.txt', 'r' ).readlines ( )
+
+						capture = False
+
+
+						for line in lines:
+
+							if capture and line [ 0 ] == '\n': break
+
+
+							if re.search ( config_regex [ regex ], line ):
+
+								capture = True
+
+								continue
+
+
+							if capture:
+
+								if line [ 0 ] == '#':
+
+									continue
+
+								else:
+
+									value = line.replace ( '\n', '' )
+
+
+									if arguments [ 'browser' ] [ regex ] is None:
+
+										arguments [ 'browser' ] [ regex ] = [ ]
+
+
+									arguments [ 'browser' ] [ regex ].append ( value )
 
 	#### 	LOGIC 		####################################
 

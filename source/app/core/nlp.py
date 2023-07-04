@@ -50,6 +50,65 @@ class Nlp:
 						self.job_offers [ basename ] = json.loads ( f'[{reader.read ( ).strip ( )}]' )
 
 
+	def print_tokens ( self, list ):
+
+		for item in list:
+
+			text = self.nl_parser ( item )
+
+			print ( f'[ {text} ]\n' )
+
+
+			for token in text:
+
+				dict = {
+					'text': 	token.text,
+					'lemma_': 	token.lemma_,
+					'pos_': 	token.pos_,
+					'tag_': 	token.tag_,
+					'dep_': 	token.dep_,
+					'shape_': 	token.shape_,
+					'is_alpha': token.is_alpha,
+					'is_sto': 	token.is_stop,
+				}
+
+				################################################
+				#### 	SPACING    #############################
+
+				spacing = [ ]
+
+				padding = 3
+
+
+				# STRING LENGTH OF KEY(S)
+				for key in dict.keys ( ):
+
+					spacing.append ( len ( key ) )
+
+
+				max_length = max ( spacing ) + padding
+
+
+				# SPACING FOR KEY(S)
+				for index, space in enumerate ( spacing ):
+
+					spacing [ index ] = max_length - space
+
+
+				for index, entry in enumerate ( dict ):
+
+					space = ' ' * spacing [ index ]
+
+					print ( f'  >> {entry}:{space}{dict [ entry ]}\n' )
+
+
+				#### 	SPACING    #############################
+				################################################
+
+				print ( '-' * 32, '\n' )
+
+
+
 	def get_meaning ( self ):
 
 		list = [
@@ -87,68 +146,7 @@ class Nlp:
 			'Special Skill Requirements'
 		]
 
-		for item in list:
-
-			# print ( ' >> item:', item )
-
-			text = self.nl_parser ( item )
-
-			print ( ' >> text:', text, '\n' )
-
-			for token in text:
-
-				print ( '   >> token:', token, '\n' )
-				# print ( '     >> token.vocab.strings:', token.vocab.strings, '\n' )
-
-				# print (
-				# 	'text:', token.text, '\n'
-				# 	'lemma_:', token.lemma_, '\n'
-				# 	'pos_:', token.pos_, '\n'
-				# 	'tag_:', token.tag_, '\n'
-				# 	'dep_:', token.dep_, '\n'
-				# 	'shape_:', token.shape_, '\n'
-				# 	'is_alpha:', token.is_alpha, '\n'
-				# 	'is_sto:', token.is_stop, '\n'
-				# )
-
-				list = {
-					'text': 	token.text,
-					'lemma_': 	token.lemma_,
-					'pos_': 	token.pos_,
-					'tag_': 	token.tag_,
-					'dep_': 	token.dep_,
-					'shape_': 	token.shape_,
-					'is_alpha': token.is_alpha,
-					'is_sto': 	token.is_stop,
-				}
-
-				spacing = [ ]
-
-
-				# for tuple in tuple_list:
-
-				# 	result = len ( tuple [ entry ] )
-
-				# 	spacing.append ( result )
-
-
-				# max_length = max ( spacing ) + padding
-
-
-				# for i, space in enumerate ( spacing ):
-
-				# 	spacing [ i ] = max_length - space
-
-
-				# return spacing
-
-				for item in list:
-
-					print ( ' >> item:', item, list [ item ] )
-
-
-
-
+		self.print_tokens ( list )
 
 
 	def parse_details ( self ):
