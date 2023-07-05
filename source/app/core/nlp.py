@@ -5,13 +5,15 @@ import spacy
 
 from utilities.util 	import Util
 
+from spacy.language 	import Language
+
 class Nlp:
 
 	def __init__ ( self ):
 
 		#### 	GLOBALS 	################################
 
-		self.nl_parser = spacy.load ( 'en_core_web_sm' )
+		self.nlp = spacy.load ( 'en_core_web_sm' )
 
 		self.job_offers = {
 			'indeed':    None,
@@ -19,6 +21,15 @@ class Nlp:
 			'linkedin':  None,
 			'wellfound': None
 		}
+
+		# self.pipeline = [
+		# 	'tok2vec',
+		# 	'tagger',
+		# 	'parser',
+		# 	'ner',
+		# 	'attribute_ruler',
+		# 	'lemmatizer'
+		# ]
 
 		#### 	INITIALIZE 	################################
 
@@ -28,11 +39,17 @@ class Nlp:
 
 	def init ( self ):
 
-		self.get_meaning ( )
+		# self.get_meaning ( )
 
-		# self.load_cached_jobs ( )
+		self.load_cached_jobs ( )
 
 		# self.parse_details ( )
+
+		self.sentence_detection ( )
+
+		# self.print_tokens ( )
+
+		# self.pipeline ( )
 
 	def load_cached_jobs ( self ):
 
@@ -49,12 +66,46 @@ class Nlp:
 
 						self.job_offers [ basename ] = json.loads ( f'[{reader.read ( ).strip ( )}]' )
 
+	def print_tokens ( self ):
 
-	def print_tokens ( self, list ):
+		list = [
+			'Strong communication skills',
+			'Strong product sense',
+			'Learning mentality',
+			'Job Duties',
+			'Minimum Requirements',
+			'Special Skill Requirements',
+			'Salary',
+			'Strong communication skills',
+			'Strong product sense',
+			'Learning mentality',
+			'Title',
+			'Job Summary',
+			'Description',
+			'Education',
+			'Job Type',
+			'Pay',
+			'Work Location',
+			'Job Title',
+			'Job Location',
+			'Job Type',
+			'Job Type',
+			'Pay',
+			'Work Location',
+			'Why Join Us',
+			'Team Introduction',
+			'Job Information',
+			'Who we are',
+			'The Opportunity',
+			'Job Category Software Engineering',
+			'Job Duties',
+			'Minimum Requirements',
+			'Special Skill Requirements'
+		]
 
 		for item in list:
 
-			text = self.nl_parser ( item )
+			text = self.nlp ( item )
 
 			print ( f'[ {text} ]\n' )
 
@@ -107,51 +158,93 @@ class Nlp:
 
 				print ( '-' * 32, '\n' )
 
+	@Language.component ( 'set_custom_boundaries' )
+	def set_custom_boundaries ( document ):
+
+		for token in document:
+
+			if token.text in [ ':', '\n', '\n\n' ]:
+
+				document [ token.i + 1 ].is_sent_start = True
 
 
-	def get_meaning ( self ):
+		return document
 
-		list = [
-			'Strong communication skills',
-			'Strong product sense',
-			'Learning mentality',
-			'Job Duties',
-			'Minimum Requirements',
-			'Special Skill Requirements',
-			'Salary',
-			'Strong communication skills',
-			'Strong product sense',
-			'Learning mentality',
-			'Title',
-			'Job Summary',
-			'Description',
-			'Education',
-			'Job Type',
-			'Pay',
-			'Work Location',
-			'Job Title',
-			'Job Location',
-			'Job Type',
-			'Job Type',
-			'Pay',
-			'Work Location',
-			'Why Join Us',
-			'Team Introduction',
-			'Job Information',
-			'Who we are',
-			'The Opportunity',
-			'Job Category Software Engineering',
-			'Job Duties',
-			'Minimum Requirements',
-			'Special Skill Requirements'
-		]
 
-		self.print_tokens ( list )
+	def add_pipes ( self ):
+
+		self.nlp.add_pipe ( 'set_custom_boundaries', before = 'parser' )
+
+
+
+	def sentence_detection ( self ):
+
+		self.add_pipes ( )
+
+
+		for site in self.job_offers:
+
+			if self.job_offers [ site ] is not None:
+
+				for offer in self.job_offers [ site ]:
+
+					# data      = f"{offer [ 'details' ]}\n\n{'-' * 60}\n\n"
+
+					data = {
+						'original': f"{offer [ 'details' ]}\n\n{'-' * 60}\n\n",
+						'cleaned':  [ ]
+					}
+
+					document  = self.nlp ( offer [ 'details' ] )
+
+					sentences = list ( document.sents )
+
+
+					count     = 0
+
+					preserve  = None
+
+
+					for sentence in sentences:
+
+						if str ( sentence ).isdigit ( ):
+
+							preserve = str ( sentence )
+
+							continue
+
+
+						if str ( sentence ).isspace ( ) is False:
+
+							result = f'{preserve} {sentence}' if preserve else f'{sentence}'
+
+							result = repr ( result ).replace ( '\\n', '' ) [ 1:-1 ]
+
+
+							data [ 'cleaned' ].append ( result )
+
+
+							preserve = None
+
+							count   += 1
+
+
+					#####################
+					##  WRITE CONTENT  ##
+
+					file = f"cache/reports/details-sentences-{offer [ 'firm' ]}.info"
+
+
+					with open ( file, 'w+' ) as writer:
+
+						writer.write ( data [ 'original' ] + '\n'.join ( data [ 'cleaned' ] ) )
+
 
 
 	def parse_details ( self ):
 
-		file = f'cache/indeed/details.info'
+		file     = f'cache/indeed/details.info'
+		file_two = f'cache/indeed/details-sentences.info'
 
 		details = [
 			"JOB SUMMARY\n\nYou will be building scalable systems and shipping features in a complex environment, where one must contend with challenges such as modernizing legacy applications and managing technical debt.\n\nROLES AND RESPONSIBILTIES\n\nDesign, develop, and deploy applications that can handle high request volumes with high reliability and low latency\n\nCollaborate with product managers to build product requirements against business objectives and drive teams through the complete software development lifecycle\n\nEnvision system features and functionality, create detailed design documentation, and decide on tradeoffs between technical and design approaches.\n\nIdentify any technical issues that arise and follow up with root-cause analysis and resolution\n\nIdentify key application metrics, build necessary dashboards for monitoring performance, and add necessary logging for real-time debugging\n\nReview code, support continuous improvement, and investigate alternatives\n\nUtilize CI/CD tools to support system integration and deployment\n\nMentor other engineers to help build a high-performing engineering culture\n\nQUALIFICATIONS\n\n2+ of experience in the technology industry, and a B.S. in Computer Science or equivalent\n\nProficiency in one or more programming languages and common data structures / algorithms\n\nAbility to write production-ready code with moderate supervision\n\nAbility to design systems of moderate complexity\n\nAbility to conduct code reviews and give sign-off for code merges\n\nStrong communication skills. You must be able to work with cross-functional partners to gather requirements and explain outcomes\n\nStrong product sense. You must be able to align your work with business objectives and make appropriate tradeoffs\n\nLearning mentality. You must be able to pick up new skills as needed and demonstrate a curiosity about new technologies\n\nHIGHLY PREFERRED\n\nEngineering experience at high-tech firms (e.g. Amazon, Meta, DoorDash, Twilio)\n\nExperience architecting and building large-scale systems in an agile development environment\n\nExperience working alongside technical product managers to drive projects and flesh out product requirements\n\nWe expect the starting salary to be around $100,000 with annual bonus and profit sharing eligibility. The actual salary will be determined based on years of relevant work experience The Hertz Corporation operates the Hertz, Dollar Car Rental, Thrifty Car Rental brands in approximately 9,700 corporate and franchisee locations throughout North America, Europe, The Caribbean, Latin America, Africa, the Middle East, Asia, Australia and New Zealand. The Hertz Corporation is one of the largest worldwide airport general use vehicle rental companies, and the Hertz brand is one of the most recognized in the world.\n\nUS EEO STATEMENT\n\nAt Hertz, we champion and celebrate a culture of diversity and inclusion. We take affirmative steps to promote employment and advancement opportunities. The endless variety of perspectives, experiences, skills and talents that our employees invest in their work every day represent a significant part of our culture \u2013 and our success and reputation as a company.\n\nIndividuals are encouraged to apply for positions because of the characteristics that make them unique.\n\nEOE, including disability/veteran\n\nReturn to Search Result",
@@ -171,6 +264,21 @@ class Nlp:
 			"Want to build new features and improve existing products that more than a billion people around the world use? Are you interested in working on highly impactful technical challenges to help the world be more open and connected? Want to solve unique, large-scale, highly complex technical problems? Our development cycle is extremely fast, and we've built tools to keep it that way. It's common to write code and have it running live on the site just hours later. We push code to the site continuously and have small teams that build products that are touched by millions of people around the world. If you work for us, you will be able to make an impact immediately.Facebook is seeking Software Engineers to join our engineering team. You can help build the next-generation of systems behind Facebook's products, create web applications that reach millions of people, build high volume servers and be a part of a team that\u2019s working to help people connect with each other around the globe.This position is full-time and there are minimal travel requirements.\n\nSoftware Engineer, Machine Learning Responsibilities:\n\nDevelop a strong understanding of relevant product area, codebase, and/or systems\n\nDemonstrate proficiency in data analysis, programming and software engineering\n\nProduce high quality code with good test coverage, using modern abstractions and frameworks\n\nWork independently, use available resources to get unblocked, and complete tasks on-schedule by exercising strong judgement and problem solving skills\n\nMaster Facebook\u2019s development standards from developing to releasing code in order to take on tasks and projects with increasing levels of complexity\n\nActively seek and give feedback in alignment with Facebook\u2019s Performance Philosophy\n\nMinimum Qualifications:\n\nExperience coding in an industry-standard language (e.g. Java, Python, C++, JavaScript)\n\nCurrently has, or is in the process of obtaining a Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience. Degree must be completed prior to joining Meta.\n\nMust obtain work authorization in country of employment at the time of hire, and maintain ongoing work authorization during employment\n\nPreferred Qualifications:\n\nDemonstrated software engineering experience from previous internship, work experience, coding competitions, or publications\n\nCurrently has, or is in the process of obtaining, a Bachelors or Masters degree in Computer Science or a related field\n\nMeta is proud to be an Equal Employment Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. You may view our Equal Employment Opportunity notice here. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. We may use your information to maintain the safety and security of Meta, its employees, and others as required or permitted by law. You may view Meta's Pay Transparency Policy, Equal Employment Opportunity is the Law notice, and Notice to Applicants for Employment and Employees by clicking on their corresponding links. Additionally, Meta participates in the E-Verify program in certain locations, as required by law\n\nReturn to Search Result"
 		]
 
+		for detail in details:
+
+			text      = self.nlp ( detail )
+
+			sentences = list ( text.sents )
+
+			# print ( ' >> text:', text )
+
+			# print ( ' >> sentences:', sentences )
+
+			for index, sentence in enumerate ( sentences ):
+
+				print ( f' >> sentence [ {index} ]:', sentence )
+
+
 		#####################
 		##  WRITE CONTENT  ##
 
@@ -180,6 +288,23 @@ class Nlp:
 
 			writer.write ( f'\n\n<{bar}>\n\n'.join ( details ) )
 
-		# for detail in details:
+	def pipeline ( self ):
 
-		# 	print ( ' >> detail:', detail )
+		# print ( ' >> self.job_offers', self.job_offers )
+
+		for site in self.job_offers:
+
+			if self.job_offers [ site ] is not None:
+
+				for offer in self.job_offers [ site ]:
+
+					# print ( ' >> offer:', offer [ 'details' ] )
+
+					# texts = ["This is a text", "These are lots of texts", "..."]
+					# - docs = [nlp(text) for text in texts]
+					# + docs = list(nlp.pipe(texts))
+
+
+					documents = list ( self.nlp.pipe ( offer [ 'details' ] ) )
+
+					print ( ' >> documents:', documents )
