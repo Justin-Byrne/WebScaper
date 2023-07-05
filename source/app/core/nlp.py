@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import html
 import spacy
 
 from utilities.util 	import Util
@@ -188,19 +189,19 @@ class Nlp:
 
 				for offer in self.job_offers [ site ]:
 
-					# data      = f"{offer [ 'details' ]}\n\n{'-' * 60}\n\n"
+					details   = offer [ 'details' ]
+
 
 					data = {
-						'original': f"{offer [ 'details' ]}\n\n{'-' * 60}\n\n",
-						'cleaned':  [ ]
+						'raw': f"{details}\n\n{'-' * 60}\n\n",
+						'new':  [ ]
 					}
 
-					document  = self.nlp ( offer [ 'details' ] )
+
+					document  = self.nlp ( details )
 
 					sentences = list ( document.sents )
 
-
-					count     = 0
 
 					preserve  = None
 
@@ -218,15 +219,13 @@ class Nlp:
 
 							result = f'{preserve} {sentence}' if preserve else f'{sentence}'
 
-							result = repr ( result ).replace ( '\\n', '' ) [ 1:-1 ]
+							result = html.unescape ( repr ( result ).replace ( '\\n', '' ) [ 1:-1 ] )
 
 
-							data [ 'cleaned' ].append ( result )
+							data [ 'new' ].append ( result )
 
 
 							preserve = None
-
-							count   += 1
 
 
 					#####################
@@ -237,7 +236,7 @@ class Nlp:
 
 					with open ( file, 'w+' ) as writer:
 
-						writer.write ( data [ 'original' ] + '\n'.join ( data [ 'cleaned' ] ) )
+						writer.write ( data [ 'raw' ] + '\n'.join ( data [ 'new' ] ) )
 
 
 
@@ -270,9 +269,6 @@ class Nlp:
 
 			sentences = list ( text.sents )
 
-			# print ( ' >> text:', text )
-
-			# print ( ' >> sentences:', sentences )
 
 			for index, sentence in enumerate ( sentences ):
 
