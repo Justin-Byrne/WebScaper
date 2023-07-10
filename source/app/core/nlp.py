@@ -53,9 +53,11 @@ class Nlp:
 
 		# self.parse_details ( )
 
-		self.sentence_detection ( )
+		self.set_sentences ( )
 
-		print ( ' >> self.details:', self.details )
+		# for key in self.details [ 'indeed' ]: print ( ' >> key:', key )
+
+		# print ( f' >> self.details [ \'indeed\' ] [ \'Tecpot ( Software Development Engineer )\' ]:', self.details [ 'indeed' ] [ 'Tecpot ( Software Development Engineer )' ] )
 
 		# self.print_tokens ( )
 
@@ -141,8 +143,7 @@ class Nlp:
 				padding = 3
 
 
-				# STRING LENGTH OF KEY(S)
-				for key in dict.keys ( ):
+				for key in dict.keys ( ): 						# STRING LENGTH OF KEY(S)
 
 					spacing.append ( len ( key ) )
 
@@ -150,8 +151,7 @@ class Nlp:
 				max_length = max ( spacing ) + padding
 
 
-				# SPACING FOR KEY(S)
-				for index, space in enumerate ( spacing ):
+				for index, space in enumerate ( spacing ): 		# SPACING FOR KEY(S)
 
 					spacing [ index ] = max_length - space
 
@@ -180,14 +180,104 @@ class Nlp:
 
 		return document
 
-
 	def add_pipes ( self ):
 
 		self.nlp.add_pipe ( 'set_custom_boundaries', before = 'parser' )
 
+	def set_sentences ( self ):
+
+		####################################################
+		#### 	FUNCTIONS    ###############################
+
+		def preserve_numeric_data ( ):
+
+			preserve  = None
 
 
-	def sentence_detection ( self ):
+			for sentence in sentences:
+
+				if sentence.text.isdigit ( ):
+
+					preserve = str ( sentence )
+
+					continue
+
+
+				if sentence.text.isspace ( ) is False:
+
+					result = f'{preserve} {sentence}' if preserve else f'{sentence}'
+
+					result = html.unescape ( repr ( result ).replace ( '\\n', '' ) [ 1:-1 ] )
+
+
+					data [ 'new' ].append ( result )
+
+
+					preserve = None
+
+
+		def tag_specific_sections ( ):
+
+			for index, sentence in enumerate ( sentences ):
+
+				loop 	   = True
+
+				last_index = 1
+
+
+				# while loop:
+
+				# 	if sentence.text:
+
+				# print ( ' >> index:', index, ' - ', sentence, ' - ', sentence.text )
+
+
+
+
+
+
+		def clean_irregularities ( ):
+
+			if '/' in offer [ 'role' ]:
+
+				offer [ 'role' ] = offer [ 'role' ].replace ( '/', '\\' )
+
+
+			if re.search ( r'(,?)\s*[I|i][N|n][C|c](\.?)', offer [ 'firm' ] ):
+
+				offer [ 'firm' ] = re.sub ( r'(,?)\s*[I|i][N|n][C|c](\.?)', '', offer [ 'firm' ] )
+
+
+		def set_global_details ( ):
+
+			key   = f"{offer [ 'firm' ]} ( {offer [ 'role' ]} )"
+
+			value = data [ 'new' ]
+
+
+			if self.details [ site ] is None:   self.details [ site ] = { key: value }
+
+			else: 								self.details [ site ] [ key ] = value
+
+
+		def write_details_report ( ):
+
+			file = f"cache/reports/{site}/{offer [ 'firm' ]} ( {offer [ 'role' ]} )_details-sentences.info"
+
+			path = os.path.dirname ( file )
+
+
+			if Util.is_directory ( path ) is False:
+
+				os.makedirs ( path )
+
+
+			with open ( file, 'w+' ) as writer:
+
+				writer.write ( data [ 'raw' ] + '\n'.join ( data [ 'new' ] ) )
+
+		####################################################
+		#### 	LOGIC    ###################################
 
 		self.add_pipes ( )
 
@@ -203,7 +293,7 @@ class Nlp:
 
 					data = {
 						'raw': f"{details}\n\n{'-' * 60}\n\n",
-						'new':  [ ],
+						'new': [ ]
 					}
 
 
@@ -211,96 +301,22 @@ class Nlp:
 
 					sentences = list ( document.sents )
 
+					# print ( ' >> sentences:', type ( sentences ) )
 
-					preserve  = None
+					sentences = [ value for value in sentences if value.text.isspace ( ) is False ]
+					# sentences = [ value for value in sentences if str ( value ).isspace is False ]
 
+					preserve_numeric_data ( )
 
-					for sentence in sentences:
+					# sentences = [ value for value in sentences if str ( value ).isspace is False ]
 
-						if str ( sentence ).isdigit ( ):
+					# tag_specific_sections ( )
 
-							preserve = str ( sentence )
+					clean_irregularities  ( )
 
-							continue
+					set_global_details    ( )
 
-
-						if str ( sentence ).isspace ( ) is False:
-
-							result = f'{preserve} {sentence}' if preserve else f'{sentence}'
-
-							result = html.unescape ( repr ( result ).replace ( '\\n', '' ) [ 1:-1 ] )
-
-
-							data [ 'new' ].append ( result )
-
-
-							preserve = None
-
-
-					#####################
-					##  CLEAN CONTENT  ##
-
-					if '/' in offer [ 'role' ]:
-
-						offer [ 'role' ] = offer [ 'role' ].replace ( '/', '\\' )
-
-
-					if re.search ( r'(,?)\s*[I|i][N|n][C|c](\.?)', offer [ 'firm' ] ):
-
-						offer [ 'firm' ] = re.sub ( r'(,?)\s*[I|i][N|n][C|c](\.?)', '', offer [ 'firm' ] )
-
-
-
-					key   = f"{offer [ 'firm' ]}-[{offer [ 'role' ]}]"
-
-					value = data [ 'new' ].copy ( )
-
-
-					# print ( ' >> key:  ', key )
-
-					# print ( ' >> value:', value )
-
-
-
-					if self.details [ site ] is None:
-
-						self.details [ site ]  = { key: value }
-
-					else:
-
-						# self.details [ site ] |= { key: value }
-
-						self.details [ site ].update ( self.details [ site ], key = value )
-
-						# print ( self.details [ site ] )
-
-
-
-					# print ( ' >> self.details:', self.details )
-
-					#####################
-					##  WRITE CONTENT  ##
-
-					file = f"cache/reports/{site}/{offer [ 'firm' ]}-[{offer [ 'role' ]}]-details-sentences.info"
-
-					##################
-					##  CHECK PATH  ##
-
-					path = os.path.dirname ( file )
-
-
-					if Util.is_directory ( path ) is False:
-
-						os.makedirs ( path )
-
-					##################
-					##     WRITE    ##
-
-					with open ( file, 'w+' ) as writer:
-
-						writer.write ( data [ 'raw' ] + '\n'.join ( data [ 'new' ] ) )
-
-
+					write_details_report  ( )
 
 	def parse_details ( self ):
 
@@ -348,20 +364,11 @@ class Nlp:
 
 	def pipeline ( self ):
 
-		# print ( ' >> self.job_offers', self.job_offers )
-
 		for site in self.job_offers:
 
 			if self.job_offers [ site ] is not None:
 
 				for offer in self.job_offers [ site ]:
-
-					# print ( ' >> offer:', offer [ 'details' ] )
-
-					# texts = ["This is a text", "These are lots of texts", "..."]
-					# - docs = [nlp(text) for text in texts]
-					# + docs = list(nlp.pipe(texts))
-
 
 					documents = list ( self.nlp.pipe ( offer [ 'details' ] ) )
 
