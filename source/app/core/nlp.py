@@ -23,6 +23,13 @@ class Nlp:
 			'wellfound': None
 		}
 
+		self.details = {
+			'indeed':    None,
+			'monster':   None,
+			'linkedin':  None,
+			'wellfound': None
+		}
+
 		# self.pipeline = [
 		# 	'tok2vec',
 		# 	'tagger',
@@ -47,6 +54,8 @@ class Nlp:
 		# self.parse_details ( )
 
 		self.sentence_detection ( )
+
+		print ( ' >> self.details:', self.details )
 
 		# self.print_tokens ( )
 
@@ -194,7 +203,7 @@ class Nlp:
 
 					data = {
 						'raw': f"{details}\n\n{'-' * 60}\n\n",
-						'new':  [ ]
+						'new':  [ ],
 					}
 
 
@@ -229,10 +238,63 @@ class Nlp:
 
 
 					#####################
+					##  CLEAN CONTENT  ##
+
+					if '/' in offer [ 'role' ]:
+
+						offer [ 'role' ] = offer [ 'role' ].replace ( '/', '\\' )
+
+
+					if re.search ( r'(,?)\s*[I|i][N|n][C|c](\.?)', offer [ 'firm' ] ):
+
+						offer [ 'firm' ] = re.sub ( r'(,?)\s*[I|i][N|n][C|c](\.?)', '', offer [ 'firm' ] )
+
+
+
+					key   = f"{offer [ 'firm' ]}-[{offer [ 'role' ]}]"
+
+					value = data [ 'new' ].copy ( )
+
+
+					# print ( ' >> key:  ', key )
+
+					# print ( ' >> value:', value )
+
+
+
+					if self.details [ site ] is None:
+
+						self.details [ site ]  = { key: value }
+
+					else:
+
+						# self.details [ site ] |= { key: value }
+
+						self.details [ site ].update ( self.details [ site ], key = value )
+
+						# print ( self.details [ site ] )
+
+
+
+					# print ( ' >> self.details:', self.details )
+
+					#####################
 					##  WRITE CONTENT  ##
 
-					file = f"cache/reports/details-sentences-{offer [ 'firm' ]}.info"
+					file = f"cache/reports/{site}/{offer [ 'firm' ]}-[{offer [ 'role' ]}]-details-sentences.info"
 
+					##################
+					##  CHECK PATH  ##
+
+					path = os.path.dirname ( file )
+
+
+					if Util.is_directory ( path ) is False:
+
+						os.makedirs ( path )
+
+					##################
+					##     WRITE    ##
 
 					with open ( file, 'w+' ) as writer:
 

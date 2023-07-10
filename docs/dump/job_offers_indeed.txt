@@ -1,0 +1,1154 @@
+title: Software Engineer (RxR) Bellevue V
+
+party: WALGREENS
+
+locale: Bellevue, WA 98005
+
+pay: None
+
+type: None
+
+setting: None
+
+details: 
+ Job Summary
+  This role performs and implements activities that impacts components / processes of specified functional areas of the Walgreens business software products OR Digital/Online application in an Agile environment. Work is typically received in short-term assignments that often require the application of independent judgment. Operates within the context of defined procedures that provide desired functionality to digital solutions, products and programs, typically for intermediary, basic to complex systems. Implements activities that influence entry to mid-level components of the functional area
+  
+  
+ Job Responsibilities
+ 
+   Writes code that meets specifications. Develops software applications and tools.
+   Completes programming and performs testing and debugging applications
+   Develops software applications and tools using Agile development methodologies.
+   Participates actively in the design, architecture and build phases, to aim at producing high quality deliverables, working with existing architects where appropriate. 
+  Participates in the evaluation of compatibility of programs with existing communications hardware and software features. Develops professional expertise, applies company policies and procedures to resolve a variety of issues.
+   Works on problems of moderate scope where analysis of situations or data requires a review of a variety of factors. Exercises judgment within defined procedures and practices to determine appropriate action. 
+  Builds productive internal/external working relationships.
+   Receives general instructions on routine work, detailed instructions on new projects or assignments. Usually works with some supervision, conferring with superiors on unusual or complex matters
+   Demonstrates proficiency in several areas of the professional function. 
+  Has working knowledge of programming languages important to the organization
+   Effectively resolves problems and roadblocks as they occur. Has working knowledge of programming languages important to the organization. 
+  Interacts with internal and external peers and/or managers to exchange semi-complex information related to assigned activities. 
+  Acts as individual contributor as well as team member
+   Utilizes experience in order to identify problematic relationships. 
+  Anticipates, prevents and eliminates problems and creates efficient fixes. 
+  Gathers and updates necessary information and communicates to appropriate parties.
+  An employee in this position can expect a salary/hourly rate between $90,0155 and $166,760 plus bonus pursuant to the terms of any bonus plan if applicable. The actual salary will depend on experience, seniority, geographic locations, and other factors permitted by law. To review benefits, please click here jobs.walgreens.com/benefits.
+  
+  
+ Equal Opportunity Employer, including disability/veterans.
+  
+  
+ About Walgreens and WBA
+  Walgreens (www.walgreens.com) is included in the U.S. Retail Pharmacy and U.S. Healthcare segments of Walgreens Boots Alliance, Inc. (Nasdaq: WBA), an integrated healthcare, pharmacy and retail leader with a 170-year heritage of caring for communities. WBA’s purpose is to create more joyful lives through better health. Operating nearly 9,000 retail locations across America, Puerto Rico and the U.S. Virgin Islands, Walgreens is proud to be a neighborhood health destination serving nearly 10 million customers each day. Walgreens pharmacists play a critical role in the U.S. healthcare system by providing a wide range of pharmacy and healthcare services, including those that drive equitable access to care for the nation’s medically underserved populations. To best meet the needs of customers and patients, Walgreens offers a true omnichannel experience, with fully integrated physical and digital platforms supported by the latest technology to deliver high-quality products and services in communities nationwide.
+  
+ Basic Qualifications
+  
+ 
+   Bachelor's degree in computer science, Information Technology or related field of study and at least 2 years of professional work experience in Engineering, Software Engineering or similar.
+   Experience writing code for applications or automation
+   Experience with programming languages for online applications, microservices, APIs or mobile applications
+   Experience building ,testing applications or automation
+   Knowledge of the Software Development Life Cycle
+   Experience creating coding solutions to fix moderate problems/issues
+   Willing to travel up to/at least 10% of the time for business purposes (within state and out of state).
+ 
+  
+  Preferred Qualifications
+  
+ 
+   Experience working in an Agile environment
+   At least 2 years of progressively complex related experience.
+   Experience identifying operational issues and recommending and implementing strategies to resolve problems
+ 
+Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer III (Full Stack)
+
+party: MedBridge Inc.
+
+locale: Washington State
+
+pay: $130,000 - $175,000 a year
+
+type: Full-time
+
+setting: Remote
+
+details: 
+ Join the team shaping the future of healthcare! MedBridge is a dynamic software company working with the country’s largest healthcare providers to build technology solutions helping patients get better faster, while decreasing the overall cost of care. Our Engineering team is growing and looking for a Software Engineer III to join us! We hire in the following states: AZ, CO, FL, IL, MA, MI, MN, NC, NY, OR, PA, TX, UT, VA, WA, WI.
+  The U.S. Healthcare industry is going through a transformation. Patients want access to better healthcare tools and experiences and healthcare systems are stretched beyond capacity and adapting to the new normal after the pandemic. In this role you'll be working on the teams that are being tasked with solving these problems.
+  Why work at MedBridge?
+ 
+   We are mission driven. We are not just in it for the money. We believe continuing education improves the lives of both medical professionals and the patients they care for.
+   We create award-winning products. In 2022 alone, we’ve won American “Stevie” Awards for Best Professional Education App and the 2022 MedTech: Digital Health Innovations award.
+   We’re a fast-growing company where you’ll have opportunities to develop your career. We were named one of the Top 100 Fastest Growing Companies by the Puget Sound Business Journal (PSBJ) as well as an Inc. 5,000 Fastest-Growth Company for 2022.
+   You’ll make an impact here. Even as we grow, our individual teams remain small and dynamic, meaning the work of every individual matters.
+   Our customers love MedBridge! We have a nearly 100% client retention rate and are continuing that work in 2023 and beyond.
+ 
+  Responsibilities:
+ 
+   Help own and update existing production services
+   Design and implement new services to help fulfill business requirements
+   Help develop documentation and procedures to allow other teams to implement services faster and autonomously
+ 
+  Requirements:
+ 
+   5+ years of experience as professional software engineer
+   2+ years of experience contributing to the architecture and design (architecture, design patterns, reliability, and scaling) of new and existing web applications
+   1+ years of experience as a mentor, tech lead, or leading an engineering team
+   Experience and strong proficiency with building web applications using Go, PHP and Angular
+   Experience and strong proficiency with MySQL or other relational database
+   Experience writing automated unit and integration tests
+   A Bachelor’s Degree in Computer Science, related field, or equivalent industry experience
+ 
+  Our Culture:
+ 
+   Passion. We love what we do, and we find inspiration in our passion for improving patient care with innovative products.
+   Collaboration. We seek and welcome feedback from colleagues, clinicians, and patients, knowing that collaboration leads to greater success.
+   Resourcefulness. We’re continuously iterating and optimizing for long-term success and efficiency. We think of creative ways to solve the problem at hand.
+   Quality. Quality in our work is of utmost importance; we hold ourselves and our teammates to higher standards because the quality of our work directly impacts lives.
+   Customer-centric. Our success and continued growth are driven by products customers love.
+   Personal health and wellness. MedBridge contributes generously to medical, dental, and vision benefits. We provide paid sick time, vacation time, parental leave, and personal days, and we offer a 401(k) with a company match.
+   Professional growth. We offer an annual stipend plus two days of paid time off for you to attend the professional development course of your choice.
+ 
+  Compensation Range: $130K - $175K
+  At MedBridge, salary ranges are assigned to a job based on 3rd party salary benchmark surveys. Individual pay within this range is informed by the candidate's skills, capabilities and experience.
+  We embrace diversity and are an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or status as a protected veteran. No matter your background, your orientation, your identity expression, or whatever else makes you unique, if you want to raise the bar and join an amazing team of passionate people, then we'd love to work alongside you at MedBridge.
+  Now it’s your turn. If you liked what you’ve read and think MedBridge would be a great career choice for you, apply now and our Recruiting team will quickly follow up with you.
+If you require alternative methods of application or screening, you must approach the employer directly to request this as Indeed is not responsible for the employer's application process.Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer
+
+party: Droisys Inc
+
+locale: Seattle, WA
+
+pay: $70 - $80 an hour
+
+type: Contract
+
+setting: Hybrid remote
+
+details: 
+ Droisys is seeking Software Engineer for one of our Direct clients. If this position is a fit for you, share your up-to-date resume.  Title: Software Engineer Office Location: Seattle, WA Work Location: In Office/Hybrid  Terms: 3+ months 
+ Not Available on C2C  Responsibilities: 
+ 
+  Collaborate with the team to develop and enhance systems. 
+  Utilize your strong Java and/or Python development skills to contribute to the development of software components. 
+  Engage in both individual and collaborative work environments, where two or three team members may work together in certain situations. 
+  Contribute to the development, testing, and documentation of software components. 
+  Conduct deep dives into complex tasks or projects, when necessary, particularly for significant deliverables. 
+  Work on predetermined deliverables, as the team has specific projects in mind upon your joining. 
+  Assist the team by building tooling that enhances productivity. 
+  Impact the quality, productivity, and testing capabilities of the team's three services within the training platform. 
+ 
+ Requirements: 
+ 
+  Minimum 5 years of experience in software engineering. 
+  Strong proficiency in Java and/or Python development. 
+  Familiarity with Kubernetes or equivalent container orchestration technologies. 
+  Experience in distributed systems or working on infrastructure and search systems is highly relevant. 
+  Exposure to Pollimi and Rubex is desirable. 
+  Ability to work effectively both independently and in a collaborative team environment. 
+  Strong problem-solving skills and attention to detail. 
+  Excellent written and verbal communication skills.
+ 
+If you require alternative methods of application or screening, you must approach the employer directly to request this as Indeed is not responsible for the employer's application process.Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Developer
+
+party: Jet City Consulting
+
+locale: Bainbridge Island, WA
+
+pay: Contract
+
+type: Contract
+
+setting: None
+
+details: 
+ We are looking for an experienced developer proficient in ASP/VB, .Net, and Microsoft SQL Server. We are a growing consulting and software development firm based in Bainbridge Island, WA. We recently were awareded a six month contract to build a new business development tool in ASP/VB .NET.   This is a contract position with no travel or commuting. You will can work from your own office. We are a task driven and goal oriented shop. Work when you want, how you want, just get the job done.
+ 
+   Requirements: 
+   
+   You must be a self starter, and have solid real-world experience in application development. 
+   
+   
+  
+   Excellent analytical and problem solving skills 
+   Excellent written and verbal communication skills with an aptitude for learning new technologies 
+   2+ yrs of software development experience, and user interface development 
+   2+ yrs of development targeting the .Net platform: VB, ASP.NET, ADO.NET 
+   Experience in database design &amp; development (MS SQL) 
+   XML / Web Services experience 
+   JavaScript experience 
+   Design (UI) skills a plus 
+  
+ 
+ If you are interested please send resume and salary requirements to info@jetcc.com
+Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer
+
+party: Traverse Data
+
+locale: Seattle, WA
+
+pay: $65,000 - $100,000 a year
+
+type: Full-time
+
+setting: None
+
+details: 
+ About Traverse  
+ Traverse is an identity resolution company helping marketers go beyond their active list, and engage in-market consumers within the email channel. It’s no secret that email is a highly effective communication tool for marketers to reach their active subscribers. Our aspirations for email are much bigger. 
+  We enable marketers to reach people via email whom they currently have no means to do so, including: 
+  
+  Real-time identity resolution for anonymous website visitors 
+  Former customers who are in-market again for their products 
+  Identifying new customers who are in-market for products across the web 
+  
+ Founded by the same team that started and sold LeadSpend to Experian. 
+  About the Position  
+ The Traverse team is looking for a software engineer to help grow and maintain our existing products, and innovate into new areas. At its core, this position will revolve around working as part of our core development team to build out our evolving product offerings. We are a small and agile company, and put a high premium on the ability to work independently to achieve a goal. 
+  We each wear many hats, and this role is no exception. Depending on the experience of the candidate, this role may expand to include additional responsibilities such as managing a development team, administering our stack in production, and maintaining our product roadmap and associated backlog. 
+  The position will be located in Seattle, but full-time remote will be considered for the right candidate. Salary will range from $65,000 to $100,000 depending on experience. 
+  As a future Software Engineer at Traverse, you are: 
+ 
+  Well organized and self-motivated 
+  An excellent developer, able to write efficient and clean code and maintain tests 
+  Able to work both independently and as part of a team 
+  A critical thinker, able to understand how technologies fit together and identify issues 
+  
+ Responsibilities may include: 
+  
+  Developing code for Traverse’s core products and ensuring all code is well tested 
+  Interpreting user stories into technical needs and acceptance criteria 
+  Reviewing pull requests and merging to our main code branch 
+  Monitoring the platform production deploys 
+  Contributing to deployment infrastructure (Jenkins and various automation) 
+  
+ Qualifications: 
+  
+  Bachelor’s degree in Computer Science or a related field 
+  Excellent technical written and verbal communication skills 
+  Excellent understanding of JavaScript, NodeJS, and Git 
+  Experience building RESTful APIs, especially in Express and related frameworks 
+  Experience in software architecture and design, especially with web applications and distributed systems 
+  Experience working with data on a large scale, and an understanding the challenges it presents 
+  Experience with network infrastructure, especially in AWS 
+  
+ Concrete Skills: 
+  
+  Node.js. Experience with Node Streams, Express.js, and Promises required. 
+  AWS. Experience with Cloudformation, DynamoDb, Cloudwatch, SQS, and SWF desired. 
+  SQL. Experience with AWS RDS, MySql, and/or PrestoDb desired. 
+  Bash. Familiar with manipulating files using pipes and unix tools such as grep, awk, and compression utilities. 
+  Jenkins. Experience managing a continuous delivery pipeline with automated tests and deployments. Experience with other CI platforms may be considered. 
+  Git. Experience working within a Github organization, multiple repositories and pull requests. Other version control software experience may be considered. 
+  
+ This position is open to all candidates that meet the minimum qualifications. Traverse values diverse perspectives and life experiences. Applicants will be considered regardless of race, color, creed, national origin, ancestry, sex, marital status, disability, religious or political affiliation, age, sexual orientation, medical condition, or pregnancy. Traverse encourages people of all backgrounds to apply, including people of color, immigrants, refugees, women, LGBTQ, people with disabilities, veterans, and those with diverse life experiences. If you have questions, please contact sam@traversedata.com.
+Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer
+
+party: Salesforce
+
+locale: Seattle, WA 98103
+
+pay: $156,030 - $168,700 a year
+
+type: Full-time
+
+setting: None
+
+details: 
+ To get the best candidate experience, please consider applying for a maximum of 3 roles within 12 months to ensure you are not duplicating efforts. 
+ 
+ Job Category Software Engineering 
+ 
+ Job Details 
+ Salesforce Inc. seeks Software Engineer in Seattle, WA: 
+ 
+ Job Duties : Formulate, implement, and evaluate algorithms for platform and application. Create code for front-end development. Work closely with Quality Engineering, Product Management, and Technical Operations to develop, test, and deploy highly useful, high quality software. Analyze, design and develop test cases and implement automated test suites. Resolve complex technical issues and drive innovation that improves salesforce. Telecommuting is an option. Some travel to Salesforce’s offices is required. ˆAbove address additionally encompasses the following Salesforce locations in the Seattle area: 1621 North 34th Street, Seattle, WA 98103, 744 N. 34th St. Seattle, WA 98103, 1000 N. Northlake Way, Seattle, WA 98103, and 400 Urban Plaza, Suite 700 Kirkland, WA 98033. The permanent position may be offered at any of these locations in the Seattle area. 
+ 
+ Minimum Requirements : Master’s degree (or its foreign degree equivalent) in Computer Science, Engineering (any field), or a related quantitative discipline. 
+ 
+ A related technical degree required (Computer Science, Engineering (any field). 
+ 
+ Special Skill Requirements : (1) Java; (2) C++; (3) C; (4) HTML; (5) JavaScript; (6) SQL; (7) R; (8) Python; (9); MongoDB (10) NoSQL; (11) Golang; (12) XML; (13) PostreSQL; (14) C#; (15) Splunk; (16) Google API. Any suitable combination of education, training and/or experience is acceptable. Education, experience and criminal background checks will be conducted. Telecommuting is an option. Some travel to Salesforce’s office is required. 
+ 
+ Salary : $156,030.00 - $168,700.00 per annum 
+  Certain roles may be eligible for incentive compensation, equity, and benefits. More details about company benefits can be found at the following link: https://www.salesforcebenefits.com . 
+ 
+ Submit a resume using the apply button on this posting or by email at: onlinejobpostings@salesforce.com at Job #21-1264. Salesforce is an Equal Opportunity &amp; Affirmative Action Employer. Education, experience and criminal background checks will be conducted. 
+ 
+ #LI-DNI 
+ 
+ Accommodations 
+ If you require assistance due to a disability applying for open positions please submit a request via this Accommodations Request Form . 
+ 
+ Posting Statement 
+ At Salesforce we believe that the business of business is to improve the state of our world. Each of us has a responsibility to drive Equality in our communities and workplaces. We are committed to creating a workforce that reflects society through inclusive programs and initiatives such as equal pay, employee resource groups, inclusive benefits, and more. Learn more about Equality at Salesforce and explore our benefits. 
+ 
+ Salesforce.com and Salesforce.org are Equal Employment Opportunity and Affirmative Action Employers. Qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender perception or identity, national origin, age, marital status, protected veteran status, or disability status. Salesforce.com and Salesforce.org do not accept unsolicited headhunter and agency resumes. Salesforce.com and Salesforce.org will not pay any third-party agency or company that does not have a signed agreement with Salesforce.com or Salesforce.org . 
+ 
+ Salesforce welcomes all. 
+ 
+ More details about our company benefits can be found at the following link: https://www.getsalesforcebenefits.com/ 
+ 
+ For Washington-based roles, the base salary hiring range for this position is $156,030 to $168,700. 
+ 
+ Compensation offered will be determined by factors such as location, level, job-related knowledge, skills, and experience. Certain roles may be eligible for incentive compensation, equity, benefits. More details about our company benefits can be found at the following link: https://www.salesforcebenefits.com.
+Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer - SE19695
+
+party: Accenture
+
+locale: Seattle, WA 98101
+
+pay: $125,500 - $135,500 a year
+
+type: None
+
+setting: None
+
+details: Position Overview: Seeking an experienced Software Engineer that has a demonstrated history of designing and developing digital experiences for a modern, streamlined customer experience in the financial sector. This client is interested in a creative and collaborative individual that will create innovative solutions to current infrastructure that will improve CI/CD pipeline and customer experience. 
+
+ 
+Responsibilities:
+ 
+ 
+ Design and develop innovative software solutions in a Full Stack environment. 
+ Utilize JavaScript, Angular 2+, CSS and other related technologies to construct a portal platform ensuring high quality and responsiveness to frontend. 
+ Utilize Java, Kotlin and Spring Boot to develop a streamlined backend. 
+ Collaborating with a team to ensure standards for solution design, code, quality, and development tools are met through the SDLC, using tools such as Splunk, Gitlab, etc. 
+ 
+Requirements:
+ 
+ 
+ 3+ years of experience in Java 
+ Moderate proficiency in Kotlin is highly preferred. 
+ Advanced knowledge of with frontend technologies HTML, Javascript, CSS, Angular 2+ and Typescript 
+ Strong problem-solving and analytical skills 
+ At Accenture , we understand that our people drive our success. We provide our team members with competitive weekly pay, a good working environment and an excellent combination of additional benefits like health and dental insurance, a 401(k) retirement savings plan with employer match, paid vacations, paid personal and sick time, paid holidays, on-the-job training, and opportunities for career growth and advancement. 
+
+ 
+ 
+ Must ready to start within one month 
+ No any type of visa sponsorship 
+ Must be in the US 
+ 
+Base Salary Range: $125,500.00 - $135,500.00If you require alternative methods of application or screening, you must approach the employer directly to request this as Indeed is not responsible for the employer's application process.Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Development Engineer-Customer Engineering
+
+party: Adobe
+
+locale: Seattle, WA 98103
+
+pay: $101,500 - $194,300 a year
+
+type: Full-time
+
+setting: None
+
+details: 
+ Changing the world through digital experiences is what Adobe’s all about. We give everyone—from emerging artists to global brands—everything they need to design and deliver exceptional digital experiences! We’re passionate about empowering people to create beautiful and powerful images, videos, and apps, and transform how companies interact with customers across every screen. 
+
+ We’re on a mission to hire the very best and are committed to creating exceptional employee experiences where everyone is respected and has access to equal opportunity. We realize that new ideas can come from everywhere in the organization, and we know the next big idea could be yours! 
+
+ Who we are 
+At Marketo , an Adobe company, we are crafting the world’s leading engagement platform that empowers marketers to deliver the authentic experiences customers desire at scale. Our team is fueled with a passion for innovation, growth, and a steadfast dedication to making the Marketer successful. 
+
+ We’re on a mission to hire the very best and are committed to building exceptional employee experiences where everyone is respected and has access to equal opportunity. We realize that new ideas can come from everywhere in the organization, and we know the next big idea could be yours! 
+The Opportunity 
+Are you ready to collaborate with the world’s largest technology companies? Do you revel in finding creative ways to solve unique problems while working with engineers all over Adobe? If so, we’d love to hear from you! 
+
+ Marketo is seeking an experienced Software Engineer III to join our Customer Engineering Team (CET). We’re an agile team of creative problem-solvers with a passion for helping marketing teams achieve their business goals. As advocates for some of our largest customers, we are in a unique position to both develop our own solutions and assist component teams in delivering quality features that support our highest-scale needs. 
+
+ Work with highly-available data streams, RESTful APIs and both internal and external interfaces that support and empower our users. Learn to anticipate our customer’s needs through a suite of powerful monitoring tools and the support of your peers. Participate in cross-cutting platform investigations and find ways to unlock new levels of performance. 
+
+ This customer-facing role will include collaborating with engineering teams throughout Adobe, participating in incident investigations and coverage rotation, writing excellent code, and up to 5% travel. 
+This customer-facing role will include collaborating with engineering teams throughout Adobe, participating in incident investigations and coverage rotation, writing excellent code, and up to 5% travel. This position is a hybrid role - requiring approximately 50% of work time in the office. The core team is in Portland, OR, while other associated teams are in Seattle, WA, and San Jose, CA. 
+What you’ll do 
+
+ Collaborate and solution with some of our biggest customers 
+
+ Work with data streams and APIs to provide enhanced automation capabilities 
+
+ Build tools to alleviate support bottlenecks 
+
+ Proactively monitor for improvement opportunities 
+
+ Enhance scalability and performance across the platform 
+What you have 
+
+ 3+ years working in SaaS platforms &amp; technologies 
+
+ An emphasis on back-end development (Java or PHP preferred) 
+
+ All the web basics covered - DOM, HTML5, CSS3 and JavaScript 
+
+ Comfort working with SQL or NoSQL data stores (MySQL, Postgres, MongoDB) 
+
+ Experience with Docker or other container orchestration systems 
+
+ Excellent communication skills and an eagerness to collaborate! 
+Bonus Points 
+
+ Experience with RESTful APIs or microservices 
+
+ Familiarity with Scrum / Agile Methodologies 
+
+ Solid understanding of version control systems (Git / SVN) 
+
+ Proficiency working with event streams or message queues (Kafka, Kinesis) 
+
+ Practical exposure to APM and monitoring tools (New Relic, Wavefront, Vivid Cortex) 
+Our compensation reflects the cost of labor across several U.S. geographic markets, and we pay differently based on those defined markets. The U.S. pay range for this position is $101,500 -- $194,300 annually. Pay within this range varies by work location and may also depend on job-related knowledge, skills, and experience. Your recruiter can share more about the specific salary range for the job location during the hiring process. 
+
+ At Adobe, for sales roles starting salaries are expressed as total target compensation (TTC = base + commission), and short-term incentives are in the form of sales commission plans. Non-sales roles starting salaries are expressed as base salary and short-term incentives are in the form of the Annual Incentive Plan (AIP). 
+
+ In addition, certain roles may be eligible for long-term incentives in the form of a new hire equity award. 
+
+ Adobe is proud to be an Equal Employment Opportunity and affirmative action employer. We do not discriminate based on gender, race or color, ethnicity or national origin, age, disability, religion, sexual orientation, gender identity or expression, veteran status, or any other applicable characteristics protected by law. Learn more. 
+
+ Adobe aims to make Adobe.com accessible to any and all users. If you have a disability or special need that requires accommodation to navigate our website or complete the application process, email accommodations@adobe.com or call (408) 536-3015. 
+
+ Adobe values a free and open marketplace for all employees and has policies in place to ensure that we do not enter into illegal agreements with other companies to not recruit or hire each other’s employees.Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer I (Refer to Job # CL23)
+
+party: Wyze Labs
+
+locale: Kirkland, WA 98033
+
+pay: $127,338 - $165,000 a year
+
+type: Full-time
+
+setting: Hybrid remote
+
+details: Who is Wyze?
+Wyze is a high growth, Series B, consumer technology company. Our vision is to make great technology accessible to everyone through our smart home platform. Our aim is to serve everyday people, like me, you, and our friends and families, with too good to be true products and services. We want employees who will be inspired by this and welcome all who will help us build the next amazing chapter at Wyze.
+Wyze is home to some of the most innovative products and services in the market. Forbes named us in their America’s Best Startup Employers 2023 list, Time Magazine selected us for their 100 Most Influential Companies of 2022, Fast Company named us as one of the Most Innovative Companies in 2021and PCMag gave our Cam v3 an Editor’s Choice Award. We disrupted the market with our Wyze Cam v1 and then quickly took over as a market leader in the space. We recently disrupted it again with our revolutionary Cam Plus Proservice. GeekWire calls us a start-up to watch and one of the Pacific Northwest’s next unicorns… and we are just getting started.
+Our people centric innovative vision is not only present in our products and services, but it is also embedded in the fabric of our company. We were just listed in the Top 100 Best Places to Workby Built in Seattle, listed as one of their Best Midsize Companies to Work Forand awarded as one of their Companies with the Best Benefits. Seattle Business Magazine certified us as a Best Places to Worktoo!
+We value the unique life experiences every employee brings to work every day. We are committed to creating an inclusive environment whereby our employees are encouraged to be their authentic whole selves and are rewarded for their impact across the company. Everyone is welcome and empowered to do the best work of their lives.
+Our stance on workplace flexibility:
+For most roles, we support a 100% remote work environment for applicants who reside in the following states: California, Kentucky, Oregon, Pennsylvania, Texas, Utah, Virginia, and Washington.
+*This opportunity is working hybrid, based in the Greater Seattle Metropolitan area.
+Come join us and make the impossible, possible!
+Duties: 
+Design technical solutions for scalable, secure, operable cloud services. Design &amp; implement high-quality, available, and reliable services core to integrate with Rest APIs. Design &amp;amp; optimize application DevOps pipeline.
+Requirements:
+
+ Master’s degree in CS, CE, or a closely related field;
+ Exp. in designing, implementing, and testing software architecture &amp;amp; applications, formulating &amp; analyzing software requirements;
+ Proficiency in Git, JavaScript, MongoDB/ Node.js;
+ In-depth knowledge of CI/CD pipelines, Azure DevOps and Data Structures.
+
+Contact: Send resume to HR, Wyze Labs, Inc, 5808 Lake Washington Blvd Ste 301, Kirkland, WA 98033. Must refer to Job # CL 23.
+Job Type: Full-time
+Pay: $127,338.00 - $165,000.00 per year
+Benefits:
+
+ 401(k)
+ Dental insurance
+ Employee discount
+ Flexible schedule
+ Flexible spending account
+ Health insurance
+ Health savings account
+ Life insurance
+ Paid time off
+ Parental leave
+ Referral program
+ Relocation assistance
+ Vision insurance
+
+Schedule:
+
+ Monday to Friday
+
+Supplemental pay types:
+
+ Bonus pay
+
+Ability to commute/relocate:
+
+ Kirkland, WA 98033: Reliably commute or planning to relocate before starting work (Required)
+
+Experience:
+
+ designing software: 5 years (Required)
+
+Work Location: Hybrid remote in Kirkland, WA 98033If you require alternative methods of application or screening, you must approach the employer directly to request this as Indeed is not responsible for the employer's application process.Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Full Stack Developer
+
+party: Cognition Studio
+
+locale: Seattle, WA 98107
+
+pay: None
+
+type: None
+
+setting: None
+
+details: 
+
+ 
+  Must provide portfolio site and/or GitHub for review along with resume and cover letter.
+ 
+
+Report jobReturn to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Senior Software Development Engineer
+
+party: Adobe
+
+locale: Seattle, WA 98103
+
+pay: $119,000 - $232,700 a year
+
+type: Full-time
+
+setting: None
+
+details: 
+ Changing the world through digital experiences is what Adobe’s all about. We give everyone—from emerging artists to global brands—everything they need to design and deliver exceptional digital experiences! We’re passionate about empowering people to create beautiful and powerful images, videos, and apps, and transform how companies interact with customers across every screen. 
+
+ We’re on a mission to hire the very best and are committed to creating exceptional employee experiences where everyone is respected and has access to equal opportunity. We realize that new ideas can come from everywhere in the organization, and we know the next big idea could be yours! 
+
+ Our Marketo Measure engineering organization is looking for a hardworking, dedicated and results-oriented Senior Software Engineer to help scale our rapidly-growing platform. Our team is fueled with a passion for innovation, competition, and a dedication to making the Marketer successful. 
+
+ Marketo Measure is truly at the forefront of the constantly evolving and competitive landscape of Marketing Technology. We are a multi-channel, algorithmic attribution platform that quantifies the influence and incremental impact of marketing investments and customer interactions. With Marketo Measure, marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers’ journeys. 
+
+ As a member of our team, you will work with a broad set of technologies, get exposure to all aspects of our platform and ship to production early and often. You will tackle meaningful engineering problems, and build solutions our customers love by efficiently turning terabytes of data into concrete insights. 
+
+ 
+What you will do:
+ Build technical specifications, prototypes and presentations to communicate your ideas 
+
+ Design, build, improve and maintain highly performant and highly scalable services and data processing pipelines 
+
+ Work in a small, collaborative, highly productive, and high output team environment 
+
+ Champion standard methodologies and process improvements within the team 
+
+ Learn new technologies and technical solutions 
+
+ 
+What you need to succeed:
+ 5+ years of software development experience applying industry standard methodologies 
+
+ Excellent coding skills in C#, or Java 
+
+ Deep understanding of computer science and software engineering concepts, with a talent for applying and clearly articulating them 
+
+ Experience with very large data processing infrastructure spanning thousands of machines 
+
+ Experience with large datasets, data warehousing, sophisticated ETL processes, analytics engines, and non-relational databases 
+
+ Knowledge of cloud-hosted SQL-based datastores like Snowflake, BigQuery or Redshift 
+
+ Real passion for solving complex customer problems using data insights 
+
+ B.S. in Computer Science (or equivalent experience) 
+Our compensation reflects the cost of labor across several U.S. geographic markets, and we pay differently based on those defined markets. The U.S. pay range for this position is $119,000 -- $232,700 annually. Pay within this range varies by work location and may also depend on job-related knowledge, skills, and experience. Your recruiter can share more about the specific salary range for the job location during the hiring process. 
+
+ At Adobe, for sales roles starting salaries are expressed as total target compensation (TTC = base + commission), and short-term incentives are in the form of sales commission plans. Non-sales roles starting salaries are expressed as base salary and short-term incentives are in the form of the Annual Incentive Plan (AIP). 
+
+ In addition, certain roles may be eligible for long-term incentives in the form of a new hire equity award. 
+
+ Adobe is proud to be an Equal Employment Opportunity and affirmative action employer. We do not discriminate based on gender, race or color, ethnicity or national origin, age, disability, religion, sexual orientation, gender identity or expression, veteran status, or any other applicable characteristics protected by law. Learn more. 
+
+ Adobe aims to make Adobe.com accessible to any and all users. If you have a disability or special need that requires accommodation to navigate our website or complete the application process, email accommodations@adobe.com or call (408) 536-3015. 
+
+ Adobe values a free and open marketplace for all employees and has policies in place to ensure that we do not enter into illegal agreements with other companies to not recruit or hire each other’s employees.Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer
+
+party: Astreya Partners
+
+locale: Seattle, WA 98103
+
+pay: $73,340 - $115,770 a year
+
+type: Full-time
+
+setting: None
+
+details: 
+ 
+  Astreya is a leading IT solutions provider to deliver technology-enabled services and fuel digital transformation to some of the most exciting companies on the planet. We are working with the world's most recognizable and innovative organizations through co-creating applications and services with fast-moving teams.
+ 
+ 
+ 
+   Do you have the desire to use your technical skills to give back to your community and those close to you? If yes, then you're in the right place! Here you will have the creative autonomy to build new features and at the same time resolve technical challenges at one of the most influential and mission-driven nonprofits in the world. You will be able to leverage cutting-edge tools and technologies to construct solutions for a global user community. What's even better than that? You will work alongside team members who you can teach and also learn from in a culture that fosters technical and personal growth.
+ 
+ 
+ 
+   Your Roles and Responsibilities:
+ 
+ 
+  
+   
+     Engage with business users on collaboration application requirements and lead technical design discussions to help build engaging SharePoint solutions.
+   
+  
+   
+     Build, test, deploy, and maintain customized applications through agile software development lifecycle.
+   
+  
+   
+     Build and maintain PowerShell scripts and Power Automate flows to integrate applications and automate routine tasks.
+   
+  
+   
+     Implement new collaboration applications and new features within existing applications by introducing features to the user community on a regular basis.
+   
+  
+   
+     Develop detailed test plans that ensure the quality of applications and integrations prior to production releases.
+   
+  
+   
+     Collaborate cross functionally with internal infrastructure and security teams, as well as external vendors, to solve complex issues.
+   
+  
+   
+     Perform change management for system and application changes.
+   
+  
+   
+     Conduct audits on existing systems for administrator roles, general usage gaps, and app licensing.
+   
+ 
+ 
+ 
+   Your Qualifications/Skills:
+ 
+ 
+  
+   
+     3+ years’ experience developing applications on large SharePoint platforms both on-premise and online.
+   
+  
+   
+     Experience designing, developing, and maintaining various collaboration applications and services, primarily Microsoft 365, Teams, OneDrive, and other similar apps.
+   
+  
+   
+     Proficient in developing customized solutions on the Microsoft stack using C# and .NET.
+   
+  
+   
+     Experience automating routine tasks using PowerShell and Power Automate flows.
+   
+  
+   
+     Demonstrated experience developing modern Web applications using Angular and/or React.
+   
+  
+   
+     Strong customer services skills with experience engaging users in functional and technical requirements and owning the developed solutions through quality control and deployment.
+   
+  
+   
+     Strong problem-solving abilities with proven ability to turn complex challenges into successful outcomes with substantive results.
+   
+  
+   
+     Experience with systems troubleshooting to identify the root cause and fixes.
+   
+  
+   
+     Possess a strong dynamic and forward-thinking approach to technical innovation and systems engineering.
+   
+  
+   
+     Proven ability to work on cutting-edge projects and push the boundaries of systems and processes in order to provide exceptional solutions for users.
+   
+  
+   
+     Exceptional communication and writing skills with a focus on technical solutions documentation.
+   
+ 
+ 
+   Physical Demand &amp; Work Environment:
+ 
+ 
+  
+   
+     Must have the ability to perform office-related tasks which may include prolonged sitting or standing
+   
+  
+   
+     Must have the ability to move from place to place within an office environment
+   
+  
+   
+     Must be able to use a computer
+   
+  
+   
+     Must have the ability to communicate effectively
+   
+  
+   
+     Some positions may require occasional repetitive motion or movements of the wrists, hands, and/or fingers
+   
+ 
+ 
+ 
+   Salary Range
+  $73,340.00 - $115,770.00 USD (Salary)
+ 
+   Please note that the salary information provided herein is base pay only (gross); it does not include other forms of compensation which may or may not apply to this specific position, namely, performance-based bonuses, benefits-related payments, or other general incentives - none of which are guaranteed, may be subject to specific eligibility requirements, and are wholly within the discretion of Astreya to remit.
+   Further, the salary information noted above is a range that consists of a minimum and maximum rate of pay for this specific position. Where an applicant or employee is placed on this range will depend and be contingent on objective, documented work-related considerations like education, experience, certifications, licenses, preferred qualifications, among other factors.
+ 
+ 
+ 
+   Astreya offers comprehensive benefits to all Regular, Full-Time Employees, including:
+ 
+ 
+  
+   
+     Medical provided through Cigna (PPO, HSA, EPO options) / Medical provided through Kaiser (HMO option only) for California employees only
+   
+  
+   
+     Dental provided through Cigna (DPPO &amp; DHMO options)
+   
+  
+   
+     Nationwide Vision provided through VSP
+   
+  
+   
+     Flexible Spending Account for Health &amp; Dependent Care
+   
+  
+   
+     Pre-Tax Account for Commuter Benefit/Parking &amp; Transit (location-specific)
+   
+  
+   
+     Continuing Education and Professional Development via various integrated platforms, e.g. Udemy and Coursera
+   
+  
+   
+     Corporate Wellness Program
+   
+  
+   
+     Employee Assistance Program
+   
+  
+   
+     Wellness Days
+   
+  
+   
+     401k Plan
+   
+  
+   
+     Basic Life, Accidental Life, Supplemental Life Insurance
+   
+  
+   
+     Short Term &amp; Long Term Disability
+   
+  
+   
+     Critical Illness, Critical Hospital, and Voluntary Accident Insurance
+   
+  
+   
+     Tuition Reimbursement (available 6 months after start date, capped)
+   
+  
+   
+     Paid Time Off (accrued and prorated, maximum of 120 hours annually)
+   
+  
+   
+     Paid Holidays
+   
+  
+   
+     Any other statutory leaves, paid time, or other fringe benefits required under state and federal law
+   
+ 
+Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer, Product - Monetization
+
+party: Meta
+
+locale: Seattle, WA 98109
+
+pay: $116,002 - $168,000 a year
+
+type: None
+
+setting: None
+
+details: 
+ From making valuable connections between people and businesses to building premium services that deliver high-value experiences, the monetization organization at Meta empowers people and businesses to succeed in the global economy. As Meta focuses on building the next evolution of social experiences, the monetization team plays a crucial role in shaping the communication pathways and financial tools that all sized businesses, especially small to medium ones, need to thrive in the new digital economic environment. And we achieve that from end-to-end product and technology innovation.As a Software Engineer on the monetization team at Meta, you can help build cutting-edge full-stack technologies that will transform the way people and businesses connect and communicate. You’ll help develop industry-leading solutions that power next-generation, large-scale platforms and AI services to help connect billions of people around the world.
+  
+  
+  
+ Software Engineer, Product - Monetization Responsibilities:  
+ 
+  Full stack web/mobile application development with a variety of coding languages
+   Create consumer products and features using internal programming language Hack
+   Implement web or mobile interfaces using XHTML, CSS, and JavaScript
+   Work closely with our PM and design teams to define feature specifications and build the next generation of products leveraging frameworks such as React &amp; React Native
+   Work closely with operations and infrastructure to build and scale back-end services
+   Build report interfaces and data feeds
+   Complete medium to large features (each with many tasks) independently without guidance
+   Proactively identify and drive changes as needed for assigned codebase, product area and/or systems
+ 
+  
+  
+  
+ Minimum Qualifications: 
+ 
+   2+ years of programming experience
+   Currently has, or is in the process of obtaining a Bachelor's degree in Computer Science, Computer Engineering, relevant technical field, or equivalent practical experience. Degree must be completed prior to joining Meta.
+   2+ years relevant experience building large-scale applications or similar experience
+   1+ years of experience designing and completing medium to large features independently without guidance
+   1+ years of experience identifying and driving changes to applications as needed
+   Must obtain work authorization in country of employment at the time of hire, and maintain ongoing work authorization during employment
+ 
+  
+  
+  
+  
+  
+  
+  
+ 
+  Meta is proud to be an Equal Employment Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. You may view our Equal Employment Opportunity notice here. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. We may use your information to maintain the safety and security of Meta, its employees, and others as required or permitted by law. You may view Meta's Pay Transparency Policy, Equal Employment Opportunity is the Law notice, and Notice to Applicants for Employment and Employees by clicking on their corresponding links. Additionally, Meta participates in the E-Verify program in certain locations, as required by law
+ 
+Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer - CTJ - Poly
+
+party: Microsoft
+
+locale: Redmond, WA 98052
+
+pay: $76,400 - $151,800 a year
+
+type: Full-time
+
+setting: None
+
+details: 
+ 
+  Join the Commerce and Ecosystems (C+E) team - the next generation of platform and experiences enabling Microsoft and Azure, the fastest-growing cloud platform in the world which makes billions of dollars in revenue. As a Software Engineer on the C+E team, you will work alongside multiple teams within Azure, Office, and throughout Microsoft to manage and automate a large-scale Commerce platform, provide world-class analytics to customers about their consumption and billing details, and set the stage for enterprises all around the world to interact with Azure and Office seamlessly and effectively, ensuring customers and partners can provision and transact from the Azure Marketplace. We are looking for engineers who bring fresh ideas from all backgrounds, leveraging invaluable experience and perspectives to do and achieve more.
+ 
+ 
+ 
+   Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.
+ 
+  Responsibilities
+ 
+   This is a fantastic opportunity to work with incredibly talented engineers on our next set of big challenges. Being a part of Microsoft’s customer-focused culture, you will be empowered to envision, design, build, ship, and maintain the operation, reliability, and automation of services at massive scale. You will collaborate with a number of teams across the company, giving you wide exposure and a broad technical surface area. You will also support Commerce + Ecosystems at large in specific dedicated clouds, mitigating any issues that may surface in sustainable and forward-thinking ways. If you love solving challenging problems, writing high quality code, and are passionate about building and operating robust, reliable, highly distributed software systems using the latest cutting-edge technologies, then let’s talk.
+ 
+ 
+   We are looking for a Software Engineer who can operate in the face of ambiguity to define, scope, and implement solutions to complex problems. If you join, you will design and develop highly impactful solutions to all of C+E with massive opportunity for growth. These solutions will simplify service deployments and operational maintenance, including the creation of leading-edge automation frameworks to reduce toil and eliminate all manual and repetitive actions. If these prospects interest you, you may be a great fit for our team.
+ 
+  Qualifications
+ 
+   Required/Minimum Qualifications:
+ 
+ 
+ 
+  
+   
+     Bachelor's Degree in Computer Science, or related technical discipline with proven experience coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python
+   
+   
+    
+     
+       OR equivalent experience.
+     
+   
+ 
+ 
+   Other Requirements:
+ 
+ 
+ 
+   Candidates must be able to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:
+ 
+ 
+   Citizenship &amp; Citizenship Verification: This position requires verification of U.S. citizenship due to citizenship-based legal restrictions. Specifically, this position supports United States federal, state, and/or local United States government agency customers and is subject to certain citizenship-based restrictions where required or permitted by applicable law. To meet this legal requirement, citizenship will be verified via a valid passport.
+   The successful candidate must have an active U.S. Government Top Secret Clearance with access to Sensitive Compartmented Information (SCI) based on a Single Scope Background Investigation (SSBI) with Polygraph. Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. Failure to maintain or obtain the appropriate U.S. Government clearance and/or customer screening requirements may result in employment action up to and including termination.
+   Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+ 
+ 
+   Preferred/Additional Qualifications:
+ 
+ 
+  
+   
+     Bachelor's Degree in Computer Science or related technical field AND 1+ year(s) technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python
+   
+   
+    
+     
+       OR Master's Degree in Computer Science or related technical field with proven experience coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python
+     
+    
+     
+       OR equivalent experience.
+     
+   
+   Knowledge of Microsoft Azure, AWS or similar cloud computing platforms
+ 
+ 
+   Software Engineering IC2 - The typical base pay range for this role across the U.S. is USD $76,400 - $151,800 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $100,300 - $165,400 per year.
+   
+   Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay
+ 
+  
+  Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.
+Return to Search Result
+
+
+¡-- NEXT JOB --!
+
+title: Software Engineer - Storage
+
+party: DocuSign
+
+locale: Seattle, WA
+
+pay: $98,800 - $144,550 a year
+
+type: None
+
+setting: Hybrid remote
+
+details: 
+ Company Overview
+ 
+   DocuSign helps organizations connect and automate how they agree. Our flagship product, eSignature, is the world’s #1 way to sign electronically on practically any device, from virtually anywhere, at any time. Today, more than a million customers and a billion users in over 180 countries use DocuSign to accelerate the process of doing business and simplify people’s lives.
+ 
+  
+  
+ 
+ What you'll do
+ 
+   The infrastructure storage team at DocuSign develops critical back-end services that service hundreds of thousands of transactions per second with fast response times to ensure great product experiences. We designed and implemented solutions for everything from BLOB, RDBMS, NoSQL, to message queueing, and more. While we are building next generation cloud solutions, we are looking for engineers to bring cloud runtime experiences as well as storage knowledge to participate in the digital signature revolution.
+ 
+ 
+   As a software engineer, you are expected to solve tough problems leveraging your existing knowledge while learning the new ones, and you are able to be self-motivated to close issues. If you share our passion and excitement delighting our customers, this is the team for you.
+ 
+ 
+   This is an individual contributor role reporting into the Principal Software Engineer.
+ 
+ 
+ 
+   Responsibility
+ 
+ 
+   Build and design new highly available fault-tolerant infrastructure components where needed
+   Extend our existing in-house storage solutions to meet our 10X+ scale needs
+   Extend our existing in-house storage solutions to meet the needs of our internal customers
+   Partner with internal teams to aid in the consumption of the services we build
+   Code solutions to challenging technical problems
+   Design products with security, and compliance in mind, conduct design and code reviews
+   Analyze and improve the efficiency, reliability, and scalability of core services
+   Participate in live-site investigations as they occur
+ 
+  
+  
+ 
+ Job Designation
+ 
+   Hybrid: 
+  Employee divides their time between in-office and remote work. Access to an office location is required. (Frequency: Minimum 2 days per week; may vary by team but will be weekly in-office expectation)
+ 
+ 
+ 
+   Positions at DocuSign are assigned a job designation of either In Office, Hybrid or Remote and are specific to the role/job. Preferred job designations are not guaranteed when changing positions within DocuSign. DocuSign reserves the right to change a position's job designation depending on business needs and as permitted by local law.
+ 
+  
+  
+ 
+ What you bring
+ 
+   Basic
+ 
+ 
+   BS in CS, EE or equivalent
+   2+ years of hands-on software development experience
+   Experience with microservice cloud runtime technologies stacks (Docker, Kubernete, Argo, Istio)
+   Experience with storage systems (SQL, NoSQL, blob)
+ 
+ 
+ 
+   Preferred
+ 
+ 
+   Familiarity with Microsoft Stack, Azure or a cloud solution
+   Experience with operating system internals, database internals and file systems
+   A willingness to code in C#
+   Experience building large-scale, highly available, fault-tolerant, reliable applications
+ 
+  
+  
+ 
+ Wage Transparency
+ 
+   Based on applicable legislation, the below details pay ranges in the following locations:
+ 
+ 
+ 
+   Washington and New York (including NYC metro area): $98,800 - $144,550 base salary
+ 
+ 
+ 
+   This role is also eligible for bonus, equity and 
+  benefits.
+ 
+  
+  
+ 
+ Life at DocuSign
+ 
+   Working here
+ 
+ 
+   DocuSign is committed to building trust and making the world more agreeable for our employees, customers and the communities in which we live and work. You can count on us to listen, be honest, and try our best to do what’s right, every day. At DocuSign, everything is equal.
+ 
+ 
+ 
+   We each have a responsibility to ensure every team member has an equal opportunity to succeed, to be heard, to exchange ideas openly, to build lasting relationships, and to do the work of their life. Best of all, you will be able to feel deep pride in the work you do, because your contribution helps us make the world better than we found it. And for that, you’ll be loved by us, our customers, and the world in which we live.
+ 
+ 
+ 
+   Accommodation
+ 
+ 
+   DocuSign provides reasonable accommodations for qualified individuals with disabilities in job application procedures. If you need such an accommodation, including if you need accommodation to properly utilize our online system, you may contact us at accommodations@docusign.com.
+ 
+ 
+ 
+   If you experience any technical difficulties or issues during the application process, or with our interview tools, please reach out to us at taops@docusign.com for assistance.
+ 
+
+ 
+
+
+ Our global benefits 
+ 
+ 
+  
+   
+    Paid time off 
+    
+     Take time to unwind with earned days off, plus paid company holidays based on your region.
+     
+   
+  
+  
+  
+   
+    Paid parental leave 
+    
+     Take up to six months off with your child after birth, adoption or foster care placement.
+     
+   
+  
+  
+  
+   
+    Full health benefits 
+    
+     Options for 100% employer-paid health plans from day one of employment.
+     
+   
+  
+  
+  
+   
+    Retirement plans 
+    
+     Select retirement and pension programs with potential for employer contributions.
+     
+   
+  
+  
+  
+   
+    Learning &amp; development 
+    
+     Grow your career with coaching, online courses and education reimbursements.
+     
+   
+  
+  
+  
+   
+    Compassionate care leave 
+    
+     Paid time off following the loss of a loved one and other life-changing events.
+    
+   
+  
+ 
+Return to Search Result
+
