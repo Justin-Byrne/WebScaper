@@ -79,15 +79,15 @@ A leading tech company is seeking an Oracle Fusion Middleware Developer.
 The successful candidate will design and build efficient integrations by integrating various on-prem heterogeneous systems that include ERP systems like Oracle EBS, Upstream applications ( E-commerce systems -Magento, EDI Systems), and Downstream applications (WMS systems).
 The ideal candidate has experience with Oracle SOA Suite 12c+, OSB 12c, ODI 11+, JDeveloper 12c, XML, JSON, XSD’s, XSLT’s, Weblogic 12C, SOAPUI, Postman, TeamCity, Ant/Maven PLSQL.
 The company offers a great work environment!
-Oracle Fusion Middleware Developer Pay and Benefits:
-Hourly pay:
+<h1>Oracle Fusion Middleware Developer Pay and Benefits:</h1>
+<h1>Hourly pay:</h1>
 $50-$55/hr
 Worksite
-:
+<h1>:</h1>
 Leading technology and data solutions company (Seattle, WA, Must travel to customer site)
 W2 Employment, Group Medical, Dental, Vision, Life, Retirement Savings Program, PSL
 40 hours/week, 9 Month Assignment
-Oracle Fusion Middleware Developer Responsibilities:
+<h1>Oracle Fusion Middleware Developer Responsibilities:</h1>
 Design and build efficient integrations by integrating various on-prem heterogeneous systems that include ERP systems like Oracle EBS, Upstream applications ( E-commerce systems -Magento, EDI Systems), and Downstream applications (WMS systems).
 Develop high quality secured and efficient data integration software solutions that adhere to business needs using development IDE’s like JDeveloper 11g/12c, ODI client 11g/12c and Anypoint Studio 7+.
 Participate in operational activities which include environment support, root cause analysis, and Defect management using service now and Confluence.
@@ -106,7 +106,7 @@ Weekly status reports with our PM’s and Client IT stakeholders,
 Track and update assigned tickets (Incidents, Defects and Enhancements) from service now, JIRA and confluence application, maintaining required SLA’s and adhere to project, release timelines.
 Ode development, unit testing, Integration testing and delivery per agreed quality standards for all Oracle Application technology components.
 Coordinate/handshake with the offshore team for all the assigned deliverables.
-Oracle Fusion Middleware Developer Qualifications:
+<h1>Oracle Fusion Middleware Developer Qualifications:</h1>
 7-12 years of experience is preferred.
 Experience with Oracle SOA Suite 12c+,OSB 12c, ODI 11+ , Jdeveloper 12c, XML, JSON, XSD’s, XSLT’s, Weblogic 12C , SOAPUI, Postman, TeamCity, Ant/Maven PLSQL.
 Strong experience in defining integration architecture / creating solutions/implementation of integration services using Oracle Fusion Middleware SOA 12c, OSB 12c ,ODI 12c.
@@ -117,7 +117,7 @@ Strong experience in defining overall API architecture, API implementations, and
 Experience in designing integration or API application considering all performance parameters; sizing; scaling; fault- tolerance, high-availability is nice to have.
 Sound experience on various adapters, connectors and various protocol i.e. REST, SOAP, JMS, File, DB etc. is nice to have.
 Prior work experience in Developing integrations, deploying with Mulesoft with AWS services- S3,DMS,Data Pipeline, RDS - Aurora,EC2,EMR,Lambda.
-Mulesoft Anypoint platform experience:
+<h1>Mulesoft Anypoint platform experience:</h1>
 Design Center (RAML), API manager, Runtime Manager, MQ is good to have.
 Understanding of API security (OAuth, TLS/Mutual), policies, truststore/keystore is nice to have.
 MuleSoft 4+, AnyPoint Studio 7+, AWS , JAVA, Splunk, Putty is nice to have.

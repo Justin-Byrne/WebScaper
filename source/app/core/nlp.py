@@ -57,7 +57,7 @@ class Nlp:
 
 		# for key in self.details [ 'indeed' ]: print ( ' >> key:', key )
 
-		# print ( f' >> self.details [ \'indeed\' ] [ \'Tecpot ( Software Development Engineer )\' ]:', self.details [ 'indeed' ] [ 'Tecpot ( Software Development Engineer )' ] )
+		# for key in self.details [ 'indeed' ]: print ( f' >> self.details [ \'indeed\' ] [ {key} ]:', self.details [ 'indeed' ] [ key ] )
 
 		# self.print_tokens ( )
 
@@ -196,18 +196,18 @@ class Nlp:
 
 			for sentence in sentences:
 
-				if sentence.text.isdigit ( ):
+				if sentence.isdigit ( ):
 
-					preserve = str ( sentence )
+					preserve = sentence
 
 					continue
 
 
-				if sentence.text.isspace ( ) is False:
+				if sentence.isspace ( ) is False:
 
 					result = f'{preserve} {sentence}' if preserve else f'{sentence}'
 
-					result = html.unescape ( repr ( result ).replace ( '\\n', '' ) [ 1:-1 ] )
+					result = repr ( result ).replace ( '\\n', '' ) [ 1:-1 ]
 
 
 					data [ 'new' ].append ( result )
@@ -218,22 +218,36 @@ class Nlp:
 
 		def tag_specific_sections ( ):
 
-			for index, sentence in enumerate ( sentences ):
+			for index, sentence in enumerate ( data [ 'new' ] ):
 
 				loop 	   = True
 
 				last_index = 1
 
-
-				# while loop:
-
-				# 	if sentence.text:
-
-				# print ( ' >> index:', index, ' - ', sentence, ' - ', sentence.text )
+				last_char  = None
 
 
+				while loop:
+
+					if sentence.isspace ( ) is False:
+
+						last_char = sentence [ -last_index ]
 
 
+						if last_char.isspace ( ):
+
+							last_index += 1
+
+						else:
+
+							if last_char == ':':
+
+								data [ 'new' ] [ index ] = f'<h1>{sentence}</h1>'
+
+								print ( f' >> data [ \'new\' ] [ {index} ]:', data [ 'new' ] [ index ] )
+
+
+							loop = False
 
 
 		def clean_irregularities ( ):
@@ -255,9 +269,13 @@ class Nlp:
 			value = data [ 'new' ]
 
 
-			if self.details [ site ] is None:   self.details [ site ] = { key: value }
+			if self.details [ site ] is None:
 
-			else: 								self.details [ site ] [ key ] = value
+				self.details [ site ] = { key: value }
+
+			else:
+
+				self.details [ site ] [ key ] = value
 
 
 		def write_details_report ( ):
@@ -303,14 +321,23 @@ class Nlp:
 
 					# print ( ' >> sentences:', type ( sentences ) )
 
-					sentences = [ value for value in sentences if value.text.isspace ( ) is False ]
+					sentences = [ value.text.replace ( '\n', ' ' ).replace ( '\u200b', '' ) for value in sentences ]
+
+					sentences = [ value.strip ( ) for value in sentences if value.isspace ( ) is False ]
+
+
+					# sentences = [ not value or value.isspace ( ) for value in sentences ]
+
+					# >>> tests = ['foo', ' ', '\r\n\t', '', None, ""]
+					# >>> print ([not s or s.isspace() for s in tests])
+					# [False, True, True, True, True, True]
+
+
 					# sentences = [ value for value in sentences if str ( value ).isspace is False ]
 
 					preserve_numeric_data ( )
 
-					# sentences = [ value for value in sentences if str ( value ).isspace is False ]
-
-					# tag_specific_sections ( )
+					tag_specific_sections ( )
 
 					clean_irregularities  ( )
 

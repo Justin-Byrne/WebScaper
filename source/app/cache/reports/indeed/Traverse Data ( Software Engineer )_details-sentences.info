@@ -81,7 +81,7 @@ About Traverse
 Traverse is an identity resolution company helping marketers go beyond their active list, and engage in-market consumers within the email channel.
 It’s no secret that email is a highly effective communication tool for marketers to reach their active subscribers.
 Our aspirations for email are much bigger.
-We enable marketers to reach people via email whom they currently have no means to do so, including:
+<h1>We enable marketers to reach people via email whom they currently have no means to do so, including:</h1>
 Real-time identity resolution for anonymous website visitors
 Former customers who are in-market again for their products
 Identifying new customers who are in-market for products across the web
@@ -94,18 +94,18 @@ We each wear many hats, and this role is no exception.
 Depending on the experience of the candidate, this role may expand to include additional responsibilities such as managing a development team, administering our stack in production, and maintaining our product roadmap and associated backlog.
 The position will be located in Seattle, but full-time remote will be considered for the right candidate.
 Salary will range from $65,000 to $100,000 depending on experience.
-As a future Software Engineer at Traverse, you are:
+<h1>As a future Software Engineer at Traverse, you are:</h1>
 Well organized and self-motivated
 An excellent developer, able to write efficient and clean code and maintain tests
 Able to work both independently and as part of a team
 A critical thinker, able to understand how technologies fit together and identify issues
-Responsibilities may include:
+<h1>Responsibilities may include:</h1>
 Developing code for Traverse’s core products and ensuring all code is well tested
 Interpreting user stories into technical needs and acceptance criteria
 Reviewing pull requests and merging to our main code branch
 Monitoring the platform production deploys
 Contributing to deployment infrastructure (Jenkins and various automation)
-Qualifications:
+<h1>Qualifications:</h1>
 Bachelor’s degree in Computer Science or a related field
 Excellent technical written and verbal communication skills
 Excellent understanding of JavaScript, NodeJS, and
@@ -115,7 +115,7 @@ building RESTful APIs, especially in Express and related frameworks
 Experience in software architecture and design, especially with web applications and distributed systems
 Experience working with data on a large scale, and an understanding the challenges it presents
 Experience with network infrastructure, especially in AWS
-Concrete Skills:
+<h1>Concrete Skills:</h1>
 Node.js.
 Experience with Node Streams, Express.js, and Promises required.
 AWS.
